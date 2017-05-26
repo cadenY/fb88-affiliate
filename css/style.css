@@ -37,7 +37,7 @@ body {
 	float: right;
 }
 .important {
-	color:red;	
+	color:red;
 }
 .fullwidth {
 	width: 100%;
@@ -458,7 +458,7 @@ body {
 }
 
 /****************************
-	 HOME 
+	 HOME
 *****************************/
 .contentHome {
 	z-index:1;
@@ -590,13 +590,13 @@ body {
 	width:32.7%;
 }
 /****************************
-	 REGISTRATION 
+	 REGISTRATION
 *****************************/
 
 .img-ban1 {
 	text-align: center;
 	margin-bottom:20px;
-	
+
 }
 .img-ban1 img {
 	width:100%;
@@ -705,7 +705,7 @@ body {
 label {
 	//padding-top:8px;
 	display:inline-block;
-	
+
 }
 .forSubmit {
 	text-align:center;
@@ -780,9 +780,58 @@ label {
 	font-size:larger;
 }
 
+/*********************************************
+	ABOUT US
+**********************************************/
+.contentAbout {
+    min-height: 939px;
+    background: url(../images/about/about-bg.jpg) top center no-repeat;
+    background-size: 100% 100%;
+}
+.aboutWrap {
+    background: url(../images/about/aboutContent-bg.png) top center no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 34px;
+}
+.aboutWrap h3 {
+    font: italic 700 25px Arial;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+.aboutWrap p {
+    font: 400 14px Arial;
+    color :#fff;
+    margin:     0;
+}
+.aboutWrap ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.aboutWrap ul li {
+    display: block;
+    font: 400 14px Arial;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.aboutWrap ul li:before {
+    background: url(../images/about/icon-check.png) top center no-repeat;
+    display: block;
+    width: 19px;
+    height: 20px;
+    clear: both;
+    content: '';
+}
 
 
-
+/*********************************************
+	END ABOUT US
+**********************************************/
 
 
 
@@ -964,7 +1013,7 @@ label {
 
 
 /*********************************************
-	RESPONSIVE 
+	RESPONSIVE
 **********************************************/
 
 @media screen and (min-width : 1367px){
@@ -985,7 +1034,7 @@ label {
 }
 @media screen and (max-width : 768px){
 	.topNav {
-		text-align:center;	
+		text-align:center;
 	}
 	.mobs {
 		display:block;
@@ -1004,7 +1053,7 @@ label {
 		margin:0;
 		padding:15px 0;
 	}
-	.logo img {	
+	.logo img {
 		width:100%;
 		height:auto;
 		max-width:180px;
@@ -1106,17 +1155,8 @@ label {
 	.nav ul li a:hover > .navIcon .icon-go-to  {
 		background-position: -138px -148px ;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 	/*HOME*/
 	.contHomeDiv {
 		position:static;
@@ -1140,7 +1180,7 @@ label {
 		border:1px solid blue;
 	}
 
-	
+
 	/*REGISTRATION*/
 	.img-ban1 {
 		padding:0 10%;
@@ -1210,7 +1250,7 @@ label {
 	.rightReg .phone2 {
 		width: 89%;
 	}
-	
+
 	/*FOOTER*/
 	.footbox {
 		float:none;
@@ -1218,9 +1258,9 @@ label {
 		text-align:center;
 		box-sizing:border-box;
 	}
-	
-	
-	
+
+
+
 }
 @media screen and (max-width : 640px){
 	.parentSlide {
@@ -1254,14 +1294,14 @@ label {
 		font-size: 60px;
 		line-height:50px;
 	}
-	
+
 }
 @media screen and (max-width : 480px){
 	/*STICkY LEFT & RIGHT*/
 	.how-it-works, .contact-us {
 		display: none;
 	}
-	
+
 	/*REGISTER*/
 	.rightReg .phone1 {
 		width: 20%;
@@ -1269,7 +1309,7 @@ label {
 	.rightReg .phone2 {
 		width: 69%;
 	}
-	
+
 	/*HOME*/
 	.contHomeDiv {
 		position:static;
@@ -1314,5 +1354,3 @@ label {
 		margin-top:20px;
 	}
 }
-
-
