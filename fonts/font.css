@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AvertaDemo-ExtraBoldItalic';
+  src: url('AvertaDemo-ExtraBoldItalic.eot');
+  src: url('AvertaDemo-ExtraBoldItalic.woff2') format('woff2'),
+       url('AvertaDemo-ExtraBoldItalic.woff') format('woff'),
+       url('AvertaDemo-ExtraBoldItalic.ttf') format('truetype'),
+       url('AvertaDemo-ExtraBoldItalic.svg#AvertaDemo-ExtraBoldItalic') format('svg'),
+       url('AvertaDemo-ExtraBoldItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
