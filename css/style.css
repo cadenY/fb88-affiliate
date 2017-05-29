@@ -783,29 +783,31 @@ label {
 /*********************************************
 	ABOUT US
 **********************************************/
+.borderBox { box-sizing: border-box; }
 .contentAbout {
-    min-height: 939px;
     background: url(../images/about/about-bg.jpg) top center no-repeat;
     background-size: 100% 100%;
+    padding-top: 406px;
+    padding-bottom: 46px;
 }
 .aboutWrap {
-    background: url(../images/about/aboutContent-bg.png) top center no-repeat;
+    background: url(../images/about/aboutContent-bg.png) 0 0 no-repeat;
     background-size: 100% 100%;
     width: 100%;
     max-width: 1330px;
     margin: 0 auto;
-    padding: 0 34px;
+    padding: 66px 100px;
 }
 .aboutWrap h3 {
     font: italic 700 25px Arial;
     color: #fff;
-    margin: 0;
+    margin: 0 0 13px;
     text-transform: uppercase;
 }
 .aboutWrap p {
     font: 400 14px Arial;
     color :#fff;
-    margin:     0;
+    margin: 0 0 23px;
 }
 .aboutWrap ul {
     margin: 0;
@@ -814,11 +816,13 @@ label {
 }
 .aboutWrap ul li {
     display: block;
-    font: 400 14px Arial;
+    font: 400 14px/16px Arial;
     color: #fff;
-    margin: 0;
-    padding: 0;
+    margin: 14px 0 0;
+    padding: 0 0 0 40px;
+    position: relative;
 }
+.aboutWrap ul li:first-child { margin-top: 0;}
 .aboutWrap ul li:before {
     background: url(../images/about/icon-check.png) top center no-repeat;
     display: block;
@@ -826,6 +830,9 @@ label {
     height: 20px;
     clear: both;
     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -843,6 +850,7 @@ label {
 	background: #028843;
 	font-family: Arial;
 	font-size: 11px;
+    padding: 5px 0 15px;
 }
 .footbox {
 	float: left;
@@ -1032,6 +1040,17 @@ label {
 		right: 20.5%;
 	}
 }
+
+@media screen and (max-width: 977px) {
+    .contentAbout {
+        padding-top: 180px;
+    }
+    .aboutWrap {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
 @media screen and (max-width : 768px){
 	.topNav {
 		text-align:center;
@@ -1331,6 +1350,14 @@ label {
 		font-size: 40px;
 		line-height:40px;
 	}
+    /* about page */
+    .aboutWrap {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .aboutWrap ul li {
+        padding-left: 30px;
+    }
 }
 @media screen and (max-width : 420px){
 	.rightReg .phone1 {
