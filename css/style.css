@@ -789,6 +789,7 @@ label {
     background-size: 100% 100%;
     padding-top: 406px;
     padding-bottom: 46px;
+    transition: 0.3s linear;
 }
 .aboutWrap {
     background: url(../images/about/aboutContent-bg.png) 0 0 no-repeat;
@@ -797,6 +798,7 @@ label {
     max-width: 1330px;
     margin: 0 auto;
     padding: 66px 100px;
+    transition: 0.3s linear;
 }
 .aboutWrap h3 {
     font: italic 700 25px Arial;
@@ -821,6 +823,7 @@ label {
     margin: 14px 0 0;
     padding: 0 0 0 40px;
     position: relative;
+    transition: 0.3s linear;
 }
 .aboutWrap ul li:first-child { margin-top: 0;}
 .aboutWrap ul li:before {
@@ -1350,7 +1353,12 @@ label {
 		font-size: 40px;
 		line-height:40px;
 	}
+
     /* about page */
+    .contentAbout {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     .aboutWrap {
         padding-left: 30px;
         padding-right: 30px;
