@@ -823,7 +823,6 @@ label {
     margin: 14px 0 0;
     padding: 0 0 0 40px;
     position: relative;
-    transition: 0.3s linear;
 }
 .aboutWrap ul li:first-child { margin-top: 0;}
 .aboutWrap ul li:before {
@@ -837,12 +836,9 @@ label {
     top: 0;
     left: 0;
 }
-
-
 /*********************************************
 	END ABOUT US
 **********************************************/
-
 
 
 
