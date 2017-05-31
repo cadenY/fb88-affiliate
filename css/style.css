@@ -1098,9 +1098,15 @@ body.faq {
     border: none !important;
     padding: 0;
 }
-.accdn-panel .accdn-content.noanimate.static {
+.accdn-panel .accdn-content.noanimate.static,
+.accdn-panel .accdn-content.noanimate.static p {
     font-size: 14px;
     line-height: 24px;
+    text-transform: none;
+    font-weight: 400;
+}
+.accdn-panel .accdn-content.noanimate.static p {
+    margin-bottom: 8px;
 }
 .accdn-panel:last-child .accdn-content {
     border-bottom:  1px #dbdbdb solid;
