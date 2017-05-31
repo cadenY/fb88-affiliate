@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ - Affiliate</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body class="no-bg faq">
+    <div class="faq-header">
+        <img src="images/logo-fb88.png" alt="Fb88">
+        <p>Info Center</p>
+    </div>
+    <div class="faq-content">
+        <div class="faq-panel">
+            <div class="faq-accdn">
+                <div class="accdn-panel">
+                    <div class="noanimate">
+                        <p>General Questions</p>
+                    </div>
+                </div>
+                <!-- template start  -->
+                <div class="accdn-panel">
+                    <h2>32. Do I have to maintain a minimum balance in my account?</h2>
+                    <div class="accdn-content">
+                        <p>
+                            You don't need to maintain a minimum balance in your account.
+                        </p>
+                        <ol>
+                            <li>asasd</li>
+                            <li>asasd</li>
+                        </ol>
+                        <ul>
+                            <li>fkdfsj</li>
+                            <li>fkdfsj</li>
+                            <li>fkdfsj</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- template end   -->
+            </div> <!--end faq-accdn -->
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script>
+        $(function(){
+            $('.accdn-panel h2').click(function(e){
+                e.preventDefault();
+
+                if(!$(this).hasClass('active')){
+                    $('.accdn-panel h2').removeClass('active').next().slideUp();
+                    $(this).addClass('active').next().slideDown();
+                } else {
+                    $(this).removeClass('active').next().slideUp();
+                }
+
+            });
+        });
+    </script>
+</body>
+</html>

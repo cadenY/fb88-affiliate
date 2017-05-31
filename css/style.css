@@ -994,10 +994,146 @@ table.aff-tble tbody td {
 table.aff-tble tr {
     border-bottom: thin solid #000;
 }
-
-
 /*********************************************
 	END COMMISSION PAGE
+**********************************************/
+
+/*********************************************
+	FAQ PAGE
+**********************************************/
+
+/* faq */
+body.faq {
+    background: #eee !important;
+}
+.faq-header {
+    background: #028843;
+    text-align: center;
+    overflow: hidden;
+}
+.faq-header img {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto;
+}
+.faq-header p {
+    color: #028843;
+    background: #ffff01;
+    margin: 0;
+    padding: 4px 0;
+    font-size: 17px;
+}
+.faq-content {
+    background: #eee;
+    padding: 10px 20px;
+}
+.faq-panel {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.accdn-panel {
+    padding: 0 15px;
+}
+.accdn-panel h2 {
+    display: block;
+    background: #ffff;
+    color: #757575;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 15px;
+    text-decoration: none;
+    position: relative;
+    border-top: 1px solid #dbdbdb;
+    /*border-bottom: 1px solid #dbdbdb;*/
+    font-weight: 400;
+    margin: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding-right: 65px;
+}
+.accdn-panel h2::after {
+    content: '>';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    color: #B3B3B3 !important;
+    transition: all 0.2s ease;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.accdn-panel h2.active,
+.accdn-panel h2:hover {
+    background: #028843;
+    color: #fff;
+    padding-left: 25px;
+}
+.accdn-panel h2.active::after {
+    content: '>';
+    transform: rotate(90deg);
+    color: rgb(17, 25, 28, 1);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.accdn-panel:first-child h2 {
+    border-top: none;
+}
+.accdn-panel .accdn-content {
+    padding: 20px 20px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #757575;
+    display: none;
+    border: 1px #dbdbdb solid;
+    border-bottom: none;
+}
+.accdn-panel .accdn-content.noanimate {
+    display: block;
+}
+.accdn-panel:last-child .accdn-content {
+    border-bottom:  1px #dbdbdb solid;
+}
+.accdn-panel .accdn-content p {
+    margin: 0px 0px 17px 0px;
+}
+.accdn-panel .accdn-content a {
+    display: inline;
+    color :#028843;
+}
+.accdn-panel .accdn-content ul.custom {
+    list-style: none;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+.accdn-panel .accdn-content table {
+    border-color: separate;
+    margin: 0 auto;
+}
+.accdn-panel .accdn-content table th {
+    font-weight: 700;
+    border: thin solid #ccc;
+    padding: 5px 10px;
+    text-align: center;
+}
+.accdn-panel .accdn-content table td {
+    border: thin solid #ccc;
+    padding: 5px 10px;
+    text-align: center;
+}
+.noanimate p {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 10px;
+}
+/*********************************************
+	END FAQ PAGE
 **********************************************/
 
 
