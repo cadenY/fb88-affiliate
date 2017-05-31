@@ -1095,6 +1095,12 @@ body.faq {
 }
 .accdn-panel .accdn-content.noanimate {
     display: block;
+    border: none !important;
+    padding: 0;
+}
+.accdn-panel .accdn-content.noanimate.static {
+    font-size: 14px;
+    line-height: 24px;
 }
 .accdn-panel:last-child .accdn-content {
     border-bottom:  1px #dbdbdb solid;
@@ -1105,6 +1111,11 @@ body.faq {
 .accdn-panel .accdn-content a {
     display: inline;
     color :#028843;
+}
+.accdn-panel .accdn-content ul,
+.accdn-panel .accdn-content ol {
+    margin: 0;
+    padding-left: 20px;
 }
 .accdn-panel .accdn-content ul.custom {
     list-style: none;
