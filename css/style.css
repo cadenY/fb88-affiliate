@@ -8,7 +8,7 @@
        url('../fonts/AvertaDemo-ExtraBoldItalic.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
-}
+} 
 
 html {
 	box-sizing: border-box;
@@ -37,8 +37,10 @@ body {
   height: 0;
 }
 .container {
-	width: 100%;
-	//max-width: 1366px;
+	width: 1200px;
+	margin:0 auto;
+	//max-width: 1200px;
+	position:relative;
 }
 .floatL {
 	float:left;
@@ -103,6 +105,7 @@ body {
 	position: relative;
 	display: inline-block;
 	margin-right: 10px;
+	margin-top: -5px;
 }
 .newImportant {
 	position: absolute;
@@ -126,7 +129,7 @@ body {
 	font-size: 11px;
 	font-family: Arial;
 	margin-left: 10px;
-	width: 61%;
+	width: 57%;
 	position: relative;
 	top: 3px;
 }
@@ -187,7 +190,7 @@ body {
 	margin-left: 10px;
 }
 .loginBody {
-	z-index:999;
+	z-index:99991;
 	position:absolute;
 	right:-125px;
 	top:46px;
@@ -260,6 +263,12 @@ body {
 .logo {
 	float: left;
 	margin: 10px 0 0 10px;
+	//padding:10px;
+}
+.logo img {
+	max-width:100%;
+	width:70%;
+	height:auto;
 }
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
@@ -297,13 +306,15 @@ body {
 	text-decoration: none;
 	text-align: center;
 	/*width: 90px;*/
-	padding: 30px 32px 10px;
+	padding: 15px 0;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 12px;
 	font-style: italic;
+	text-transform:uppercase;
+	width:85px;
 }
 .nav ul li a .navIcon {
-	height: 65px;
+	height: 100%;
 }
 .nav ul li a .navIcon img {
 	vertical-align: bottom;
@@ -319,60 +330,60 @@ body {
 }
 .icon-home {
 	background-position: 0 0 ;
-	height:47px;
-	width:46px;
+	height:35px;
+	width:34px;
 }
 .icon-mobile {
-	background-position: -9px -51px ;
-	height:49px;
-	width:27px;
+	background-position: -5px -39px ;
+	height:35px;
+	width:19px;
 }
 .icon-products {
-	background-position: -3px -107px ;
-	height:53px;
-	width:55px;
+	background-position: 0px -79px ;
+	height:35px;
+	width:34px;
 }
 .icon-promotion {
-	background-position: -1px -167px ;
-	height:60px;
-	width:48px;
+	background-position: 0px -121px ;
+	height:35px;
+	width:28px;
 }
 .icon-commision {
-	background-position: -1px -231px ;
-	height:43px;
-	width:43px;
+	background-position: 0px -164px ;
+	height:35px;
+	width:35px;
 }
 .icon-how-it-works {
-	background-position: -1px -288px ;
-	height:45px;
-	width:44px;
+	background-position: 0px -205px ;
+	height:35px;
+	width:35px;
 }
 .icon-go-to {
-	background-position: -1px -338px ;
-	height:51px;
-	width:48px;
+	background-position: 0px -241px ;
+	height:35px;
+	width:32px;
 }
 /*icon hover*/
 .nav ul li a:hover > .navIcon .icon-home {
-	background-position: -46px 0 ;
+	background-position: -36px 0 ;
 }
 .nav ul li a:hover > .navIcon .icon-mobile {
-	background-position: -38px -51px ;
+	background-position: -27px -39px ;
 }
 .nav ul li a:hover > .navIcon .icon-products {
-	background-position: -58px -108px; ;
+	background-position: -34px -79px; ;
 }
 .nav ul li a:hover > .navIcon .icon-promotion {
-	background-position: -51px -167px ;
+	background-position: -31px -121px ;
 }
 .nav ul li a:hover > .navIcon .icon-commision {
-	background-position: -43px -232px ;
+	background-position: -35px -164px ;
 }
 .nav ul li a:hover > .navIcon .icon-how-it-works  {
-	background-position: -46px -288px ;
+	background-position: -35px -205px ;
 }
 .nav ul li a:hover > .navIcon .icon-go-to  {
-	background-position: -52px -338px ;
+	background-position: -32px -241px ;
 }
 /*********************************************
 	END
@@ -390,8 +401,8 @@ body {
 /** STICKY PART **/
 .how-it-works {
 	position:fixed;
-	top:30%;
-	z-index:9;
+	top:35%;
+	z-index:99991;
 }
 .hiwBan {
 	position:fixed;
@@ -399,11 +410,10 @@ body {
 }
 .how-it-works .hiwCont {
 	position:fixed;
-	background: red;
 	color:#fff;
 	width:250px;
 	//height:265px;
-	padding: 50px 0;
+	padding: 28px 0 28px 35px;
 	padding-left:48px;
 	background:#013c16;
 	left:-250px;
@@ -413,11 +423,11 @@ body {
 }
 .how-it-works .hiwCont td {
 	padding:0;
-	font-size:20px;
+	font-size:15px;
 	font-family:Arial;
 }
 .how-it-works .hiwCont td a{
-	padding:15px;
+	padding:6px 15px;
 	display:block;
 	color:#fff;
 	text-decoration:none;
@@ -430,9 +440,9 @@ body {
 
 .contact-us {
 	position:fixed;
-	top:30%;
+	top:35%;
 	right:0;
-	z-index:9;
+	z-index:99991;
 }
 .cuBan {
 	position:fixed;
@@ -443,8 +453,8 @@ body {
 	position:fixed;
 	color:#fff;
 	width:250px;
-	padding: 50px 0;
-	padding-right:48px;
+	padding: 28px 0px 28px 0px;
+
 	background:#013c16;
 	right:-250px;
 }
@@ -453,11 +463,11 @@ body {
 }
 .contact-us .cuCont td {
 	padding:0;
-	font-size:20px;
+	font-size:15px;
 	font-family:Arial;
 }
 .contact-us .cuCont td a{
-	padding:15px;
+	padding:6px 15px;
 	display:block;
 	color:#fff;
 	text-decoration:none;
@@ -471,19 +481,22 @@ body {
 	 HOME
 *****************************/
 .contentHome {
-	z-index:1;
-	position:relative;
+	background: url(../images/home/affiliate-casino1.jpg) top center no-repeat;
+	background-size: cover;
+	height:100%;
+	padding-bottom:45px;
+	padding-top:30px;
 }
 .bxslider {
 	z-index:1;
 }
 .parentSlide {
 	position:relative;
-	min-height:780px;
+	min-height:300px;
 }
 .childSlide {
 	position:absolute;
-	right:5%;
+	right:8%;
 	top:5%;
 	//border:1px solid red;
 	//padding:10px;
@@ -499,6 +512,10 @@ body {
 .childTwo {
 	font-size:86px;
 	line-height:55px;
+	text-transform:lowercase;
+}
+.childTwo .eighteight {
+	color:#fee71b;
 }
 .childThree {
 	font-size:94px;
@@ -549,13 +566,13 @@ body {
 }
 
 .contHomeDiv {
-	position:absolute;
+	//position:absolute;
+	display:block;
 	width:1200px;
-	//margin:-300px auto 45px auto;
+	margin:20px auto 45px auto;
 	z-index:1 !important;
-	//border:1px solid red;
-	bottom:45px;
-	right: 5.5%;
+	//margin-bottom:45px;
+	//right: 4%;
 }
 .contBoxHome {
 	float:left;
@@ -570,18 +587,21 @@ body {
 	background:blue;
 }
 .contBoxHome .txt1 {
-	margin-top:174px;
+	margin-top:196px;
 	font-weight:bold;
-	font-size:28px;
+	font-size:18px;
 	font-style:italic;
 	padding-left:10px;
+    padding-top: 5px;
 	background:url(../images/loginBg.png) repeat;
 }
 .contBoxHome .txt2 {
 	font-weight:bold;
-	font-size:35px;
+	font-size:25px;
 	font-style:italic;
 	padding-left:10px;
+	line-height: 16px;
+    padding-bottom: 10px;
 	background:url(../images/loginBg.png) repeat;
 }
 .contBoxHome.boxOne {
@@ -1162,7 +1182,7 @@ body.faq {
 	background: #028843;
 	font-family: Arial;
 	font-size: 11px;
-    padding: 5px 0 15px;
+	padding:10px 5% 30px 5%;
 }
 .footbox {
 	float: left;
@@ -1197,9 +1217,11 @@ body.faq {
 	vertical-align:middle;
 }
 .footBottom {
-	margin:0 5%;
+	width:1200px;
+	margin:0 auto;
 	color:#fff;
 	margin-top:20px;
+	padding-left:6%;
 }
 .bordots {
 	width:33.2%;
@@ -1335,25 +1357,36 @@ body.faq {
 
 @media screen and (min-width : 1367px){
 	.marquee{
-		width:70%;
+	//	width:70%;
 	}
 	.topNav, .mainNav  {
 		/*margin:0 5%;*/
-        max-width: 1572px;
-        margin: 0 auto;
-        width: 100%;
+   //     max-width: 1572px;
+    //    margin: 0 auto;
+     //   width: 100%;
 	}
 	/*HOME*/
 	.parentSlide {
 		position:relative;
-		min-height:645px;
+		//min-height:645px;
 	}
 	.contHomeDiv {
-		right: 20.5%;
+	//	right: 20.5%;
+	}
+	
+}
+@media screen and (max-width : 1200px){
+	.container , .footBottom {
+		width:100%;
+	}
+	.marquee{
+		width:49%;
 	}
 }
-
 @media screen and (max-width: 992px) {
+	.marquee{
+		width:40%;
+	}
     .contentAbout {
         padding-top: 180px;
     }
@@ -1380,13 +1413,22 @@ body.faq {
         margin-bottom: 25px;
     }
 }
+@media screen and (max-width : 846px){
+	.nav ul li a {
+		width:80px;
+		font-size:11px;
+	}
+	.marquee{
+		width:32%;
+	}
+}
 
 @media screen and (max-width : 768px){
 	.topNav {
 		text-align:center;
 	}
 	.mobs {
-		display:block;
+	//	display:block;
 	}
 	.topBox, .time-date {
 		margin-bottom:10px;
@@ -1440,6 +1482,7 @@ body.faq {
 	}
 	.nav ul li a .navIcon {
 		height:auto;
+		margin-right:10px;
 	}
 	.navIcon img {
 		width:20px;
@@ -1448,61 +1491,61 @@ body.faq {
 	}
 	/* ICON NAV */
 	.icon-home {
-		background-position:  -115px 0 ;
+		background-position:  -80px 0 ;
 		height:21px;
 		width:20px;
 	}
 	.icon-mobile {
-		background-position: -119px -22px ;
+		background-position: -83px -23px ;
 		height:21px;
-		width:12px;
+		width:11px;
 	}
 	.icon-products {
-		background-position: -116px -47px ;
-		height:24px;
-		width:24px;
+		background-position: -81px -48px ;
+		height:20px;
+		width:21px;
 	}
 	.icon-promotion {
-		background-position: -115px -73px ;
-		height:26px;
-		width:21px;
+		background-position: -80px -73px ;
+		height:21px;
+		width:17px;
 	}
 	.icon-commision {
-		background-position: -115px -101px ;
-		height:19px;
-		width:19px;
+		background-position: -80px -98px ;
+		height:21px;
+		width:21px;
 	}
 	.icon-how-it-works {
-		background-position: -116px -126px ;
-		height:20px;
-		width:19px;
+		background-position: -80px -123px ;
+		height:21px;
+		width:21px;
 	}
 	.icon-go-to {
-		background-position: -115px -148px ;
-		height:22px;
-		width:21px;
+		background-position: -80px -144px ;
+		height:21px;
+		width:20px;
 	}
 	/*icon hover*/
 	.nav ul li a:hover > .navIcon .icon-home {
-		background-position: -135px 0 ;
+		background-position: -102px 0 ;
 	}
 	.nav ul li a:hover > .navIcon .icon-mobile {
-		background-position: -131px -22px ;
+		background-position: -96px -23px ;
 	}
 	.nav ul li a:hover > .navIcon .icon-products {
-		background-position: -140px -47px; ;
+		background-position: -102px -48px; ;
 	}
 	.nav ul li a:hover > .navIcon .icon-promotion {
-		background-position: -137px -73px ;
+		background-position: -99px -73px ;
 	}
 	.nav ul li a:hover > .navIcon .icon-commision {
-		background-position: -134px -101px ;
+		background-position: -101px -98px ;
 	}
 	.nav ul li a:hover > .navIcon .icon-how-it-works  {
-		background-position: -135px -126px ;
+		background-position: -101px -123px ;
 	}
 	.nav ul li a:hover > .navIcon .icon-go-to  {
-		background-position: -138px -148px ;
+		background-position: -101px -144px ;
 	}
 
 
@@ -1520,15 +1563,16 @@ body.faq {
 	.contBoxHome {
 		float:none;
 		width:100% !important;
-		//max-width:300px;
 		margin-right:0px;
 		margin-bottom:20px;
 		color:#fff;
+		padding-top:196px;
 		height:249px;
 		z-index:1;
-		border:1px solid blue;
 	}
-
+	.contBoxHome .txt1 {
+		margin-top:0;
+	}
 
 	/*REGISTRATION*/
 	.img-ban1 {
@@ -1613,7 +1657,7 @@ body.faq {
 }
 @media screen and (max-width : 640px){
 	.parentSlide {
-		min-height:400px;
+		//min-height:400px;
 	}
 }
 @media screen and (max-width : 580px){
@@ -1628,7 +1672,7 @@ body.faq {
 		margin-top:20px;
 	}
 	.parentSlide {
-		min-height: 400px;
+		//min-height: 400px;
 	}
 	.childSlide {
 		right: 10%;
@@ -1645,12 +1689,18 @@ body.faq {
 	}
 
 }
+@media screen and (max-width : 500px){
+	/*HEADER*/
+	.bell, .time-part {
+		display:none;
+	}
+}
 @media screen and (max-width : 480px){
 	/*STICkY LEFT & RIGHT*/
 	.how-it-works, .contact-us {
 		display: none;
 	}
-
+	
 	/*REGISTER*/
 	.rightReg .phone1 {
 		width: 20%;
@@ -1668,7 +1718,7 @@ body.faq {
 		margin-top:20px;
 	}
 	.parentSlide {
-		min-height: 320px;
+	//	min-height: 320px;
 	}
 	.childOne {
 		font-size: 22px;
@@ -1725,6 +1775,11 @@ body.faq {
 	}
 	.regBoxTitle {
 		font-size: 10px;
+	}
+}
+@media screen and (max-width : 360px){
+	.joinNow, .login {
+		 width: 100px;
 	}
 }
 
