@@ -8,7 +8,7 @@
        url('../fonts/AvertaDemo-ExtraBoldItalic.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
-} 
+}
 
 html {
 	box-sizing: border-box;
@@ -916,7 +916,7 @@ ul.prodContent {
 	list-style: none;
 }
 ul.prodContent  li {
-	background: url(../images/products/check.png) left top no-repeat; 
+	background: url(../images/products/check.png) left top no-repeat;
 	padding:5px 0 5px 30px;
 }
 /*********************************************
@@ -1105,7 +1105,7 @@ body.faq {
     padding: 10px 20px;
 }
 .faq-panel {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     background: #fff;
     padding-top: 10px;
@@ -1433,7 +1433,7 @@ body.faq {
 	.contHomeDiv {
 	//	right: 20.5%;
 	}
-	
+
 }
 @media screen and (max-width : 1200px){
 	.container , .footBottom {
@@ -1769,7 +1769,7 @@ body.faq {
 	.how-it-works, .contact-us {
 		display: none;
 	}
-	
+
 	/*REGISTER*/
 	.rightReg .phone1 {
 		width: 20%;
