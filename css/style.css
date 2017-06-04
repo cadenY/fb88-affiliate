@@ -523,7 +523,7 @@ childImg {
 .childTwo {
 	font-size:86px;
 	line-height:55px;
-	text-transform:lowercase;
+	
 }
 .childTwo .eighteight {
 	color:#fee71b;
@@ -848,7 +848,7 @@ label {
 }
 .aboutWrap h3 {
     font: italic 700 25px Arial;
-    color: #fff;
+    color: #fee71b;
     margin: 0 0 13px;
     text-transform: uppercase;
 }
@@ -872,7 +872,7 @@ label {
 }
 .aboutWrap ul li:first-child { margin-top: 0;}
 .aboutWrap ul li:before {
-    background: url(../images/about/icon-check.png) top center no-repeat;
+    background: url(../images/products/check.png) top center no-repeat;
     display: block;
     width: 19px;
     height: 20px;
@@ -941,6 +941,135 @@ ul.prodContent  li {
 /*********************************************
 	END PRODUCT PAGE
 **********************************************/
+/*********************************************
+	MOBILE PAGE
+**********************************************/
+body.page-mobile {
+    background: #000;
+}
+.contentMobile{
+   
+}
+
+.Mobile-wrap {
+    max-width: 1572px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*********************************************
+	END PRODUCT PAGE
+**********************************************/
+
+/*********************************************
+	PROMOTION PAGE
+**********************************************/
+body.page-promotion {
+    background: #080808;
+}
+.contentPromotion {
+    background: url(../images/promotion/promotion_bg_vip.jpg) top center no-repeat;
+}
+
+.Promotion-wrap {
+    max-width: 1572px;
+    width: 100%;
+    margin: 0 auto;
+}
+.Promotion-banner {
+    position: relative;
+    padding-top: 108px;
+    padding-bottom: 160px;
+}
+.Promotion-banner .text  {
+    float: left;
+    padding-left: 24px;
+    position: relative;
+    z-index: 2;
+}
+.Promotion-banner .text h1 {
+    font: italic 700 78px Arial;
+    margin: 0 0 7px;
+    color: #d9d921;
+    text-transform: uppercase;
+}
+.Promotion-banner .text h2 {
+    font: italic 700 48px Arial;
+    margin: 0 0 7px;
+    color: #d9d921;
+    text-transform: uppercase;
+}
+.Promotion-banner .text h4 {
+    font: italic 700 28px Arial;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+.Promotion-banner .text ul {
+    margin: 34px 0 0;
+    padding: 0 0 0 26px;
+    list-style: none;
+}
+.Promotion-banner .text ul li {
+    color: #fff;
+    font: italic 700 48px Arial;
+    margin: 0;
+    padding: 11px 0 0 77px;
+    text-transform: uppercase;
+    position: relative;
+}
+.Promotion-banner .text ul li:before {
+    clear: both;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 77px;
+    height: 59px;
+    left: 0;
+    top: 0;
+    background: url(../images/commission/icon-check.png) 0 0 no-repeat;
+}
+.Promotion-banner .img {
+    position:  absolute;
+    z-index: 1;
+    width: 1017px;
+    top: 100px;
+    right: 0;
+}
+.Promotion-banner .img img {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+}
+#Promotion-plan {
+    padding-left: 24px;
+}
+#Promotion-plan .inner {
+    padding: 0 48px;
+}
+#Promotion-plan h2 {
+    font: italic 700 35px Arial;
+    color: #fee71b;
+    margin: 0 0 45px    ;
+    text-transform: uppercase;
+}
+#Promotion-plan h4 {
+    color: #fee31b;
+    font: italic 700 25px Arial;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}
+#Promotion-plan .inner > p {
+    color: #fff;
+    font: italic 700 17px/33px Arial;
+    margin: 0 0 50px;
+}
+
+/*********************************************
+	END PROMOTION PAGE
+**********************************************/
+
 
 
 /*********************************************
@@ -960,7 +1089,7 @@ body.page-commission {
 .comm-banner {
     position: relative;
     padding-top: 76px;
-    padding-bottom: 200px;
+    padding-bottom: 80px;
 }
 .comm-banner .text  {
     float: left;
@@ -1029,7 +1158,7 @@ body.page-commission {
     text-transform: uppercase;
 }
 #comm-plan h4 {
-    color: #fff;
+    color: #fee31b;
     font: italic 700 25px Arial;
     margin: 0 0 30px;
     text-transform: uppercase;
@@ -1055,7 +1184,7 @@ ul.aff-list li {
 }
 ul.aff-list li:first-child { margin-top: 0;}
 ul.aff-list li:before {
-    background: url(../images/about/icon-check.png) top center no-repeat;
+    background: url(../images/products/check.png) top center no-repeat;
     display: block;
     width: 19px;
     height: 20px;
