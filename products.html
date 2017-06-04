@@ -163,7 +163,98 @@
         </div>  <!--  end of header -->
 
         <!-- CONTENT STARTS HERE -->
-        
+        <div class="contentProducts">
+        	
+            <div class="contProdSlide">
+            	<div class="container">
+                	<ul class="bxslider">
+                        <li>
+                            <img src="images/products/slide1.jpg" />
+                        </li>
+                        <li>
+                           <img src="images/products/slide2.jpg" />
+                        </li>
+                        <li>
+                           <img src="images/products/slide3.jpg" />
+                        </li>               
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="contProd">
+            	<div class="container clearfix">
+                	
+                    <div class="prodBox">
+                    	<div class="prodTitle">
+                        	SPORTS
+                        </div>
+                        <ul class="prodContent">
+                        	<li>Coverage of over 30,000 live matches, Live Streaming.</li>
+                            <li>Better betting limit, Competitive odds.</li>
+                            <li>The most generous rebates on sports you can follow on your favorite match up to the last final minute. </li>
+                            <li>With Asia Sports and Euro Sports betting view</li>
+                        </ul>
+                    </div>
+                    <div class="prodBox">
+                    	<div class="prodTitle">
+                        	LIVE CASINO
+                        </div>
+                        <ul class="prodContent">
+                        	<li>A fantastic online gaming experience without download needed</li>
+                            <li>Live Baccarat, Baccarat 3D, Dragon Tiger, Sic Bo, Roulette 3D, Special Baccarat Table, Bonus Baccarat, Blackjack & Slot games.</li>
+                            <li>Multi-level casino table limit selections and high cash rebates value.</li>
+                            <li>Non-Commission Table</li>
+                            <li>Mobile versions.</li>
+                        </ul>
+                    </div>
+                    <div class="prodBox">
+                    	<div class="prodTitle">
+                        	SLOTS
+                        </div>
+                        <ul class="prodContent">
+                        	<li>Offer you various selections of Slots and Casino games without download needed</li>
+                            <li>Chance to win Large JACKPOTS – Chance to entry Large Slots Tournaments
+Mobile versions.</li>
+                        </ul>
+                    </div>
+                    <div class="prodBox">
+                    	<div class="prodTitle">
+                        	GAMES
+                        </div>
+                        <ul class="prodContent">
+                        	<li>Card Games, Table Games, Video Games, Games & Keno, Progressives & Slot Games</li>
+                            <li>Members can choose any of the games to win great prizes. </li>
+                        </ul>
+                    </div>
+                    <div class="prodBox">
+                    	<div class="prodTitle">
+                        	P2P
+                        </div>
+                        <ul class="prodContent">
+                        	<li>Fair Games To Play, Trust Place To Bet</li>
+                            <li>A fantastic online gaming experience without download needed.</li>
+                            <li>World Poker, Local DDZ and more P2P Branding Games with software licensed. </li>
+                            <li>Secure deposit - Fast withdraw – 24/7 Support</li>
+                            <li>Free Bigger Tournament, with members in worldwide.</li>
+                            <li>Mobile version.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="prodBox">
+                    	<div class="prodTitle">
+                        	Lottery
+                        </div>
+                        <ul class="prodContent">
+                            <li>Local Lottery, Keno, I-Lotto are based on the official results. We offer Bet for Real and Trial Play as well. </li>
+                            <li>More than 60 types of game play available with high Odds – GUARANTEED PAYOUT.</li>
+                            <li>Mobile version.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
          
         <!-- CONTENT ENDS HERE -->
 
@@ -214,19 +305,20 @@
         //HOME PAGE MAIN SLIDER
         $('.bxslider').bxSlider({
             adaptiveHeight: true,
-            mode: 'horizontal',
+            mode: 'fade',
             moveSlides: 1,
             slideMargin: 0,
             infiniteLoop: true,
-            slideWidth: 5000,
+            //slideWidth: 5000,
             minSlides: 1,
             maxSlides: 1,
             speed: 1000,
             pause: 10000,
             auto: true,
             touchEnabled: true,
-            pager: false,
-            responsive: true
+            pager: true,
+            responsive: true,
+			controls: false
         });
     </script>
 </body>

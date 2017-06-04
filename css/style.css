@@ -868,6 +868,63 @@ label {
 **********************************************/
 
 /*********************************************
+	PRODUCT PAGE
+**********************************************/
+.contentProducts {
+	background:#090909;
+}
+.contProdSlide {
+	background:url(../images/prodBg.jpg) repeat;
+	padding:40px 0;
+}
+.contProdSlide .bx-pager {
+	display:inline-block !important;
+	width:auto !important;
+	padding:0 !important;
+	right: 20px !important;
+	bottom: 20px !important;
+	height: auto !important;
+}
+.contProdSlide .bx-wrapper .bx-pager.bx-default-pager a {
+	width:15px;
+	height:15px;
+	border-radius:50px;
+	box-shadow:0 0 10px #fff;
+}
+.contProd {
+	padding:20px;
+}
+.contProd .container {
+	width:980px;
+}
+.prodBox {
+	color:#fff;
+	float:left;
+	width: 50%;
+	margin: 20px 0;
+}
+.prodTitle {
+	color: #fee71b;
+	font-size:25px;
+	font-weight:bold;
+	font-style:italic;
+	margin-bottom:20px;
+}
+ul.prodContent {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+ul.prodContent  li {
+	background: url(../images/products/check.png) left top no-repeat; 
+	padding:5px 0 5px 30px;
+}
+/*********************************************
+	END PRODUCT PAGE
+**********************************************/
+
+
+/*********************************************
 	COMMISSION PAGE
 **********************************************/
 body.page-commission {
@@ -1216,6 +1273,9 @@ body.faq {
 .copy img {
 	vertical-align:middle;
 }
+.copy a +  a {
+	margin-right:20px;
+}
 .footBottom {
 	width:1200px;
 	margin:0 auto;
@@ -1381,6 +1441,9 @@ body.faq {
 	}
 	.marquee{
 		width:49%;
+	}
+	.contProd .container {
+		width:100%;
 	}
 }
 @media screen and (max-width: 992px) {
@@ -1644,6 +1707,12 @@ body.faq {
 		width: 89%;
 	}
 
+	/* PRODUCT */
+	.prodBox {
+		float:none;
+		width: 100%;
+		margin: 20px 0;
+	}
 	/*FOOTER*/
 	.footbox {
 		float:none;
