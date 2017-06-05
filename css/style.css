@@ -594,12 +594,15 @@ childImg {
 	color:#fff;
 	z-index:1;
 	position:relative;
+	box-shadow: 0 0 10px #fff !important;
+	border:2px solid #fff;
+	overflow:hidden;
 }
 .contBoxHome:last-child {
 	margin-right:0;
 }
 .txtContBox {
-	background:url(../images/loginBg.png) repeat;
+	background:url(../images/semiDarkBg.png) repeat;
 	position:absolute;
 	bottom:0;
 	left:0;
@@ -770,6 +773,7 @@ label {
 	font-family:Arial;
 	font-size:14px;
 	font-weight:bold;
+	cursor:pointer;
 }
 /*VALIDATION*/
 .okcheck, .okcross {
@@ -1592,6 +1596,12 @@ body.faq {
 	}
 	.contProd .container {
 		width:100%;
+	}
+	.contHomeDiv {
+		width:100%;
+	}
+	.contBoxHome  {
+		margin-bottom:10px;
 	}
 }
 @media screen and (max-width: 992px) {
