@@ -1642,6 +1642,9 @@ body.faq {
 		box-sizing:border-box;
 		margin-top:20px;
 	}
+	.businessman {
+		display: none !important;
+	}
 	.contBoxHome {
 		float:none;
 		width:100% !important;
