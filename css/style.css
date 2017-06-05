@@ -587,24 +587,32 @@ childImg {
 }
 .contBoxHome {
 	float:left;
-	width:32.7%;
+	//width:32.7%;
+	width:393px;
+	height:200px;
 	margin-right:10px;
 	color:#fff;
-	height:249px;
 	z-index:1;
+	position:relative;
 }
 .contBoxHome:last-child {
 	margin-right:0;
-	background:blue;
+}
+.txtContBox {
+	background:url(../images/loginBg.png) repeat;
+	position:absolute;
+	bottom:0;
+	left:0;
 }
 .contBoxHome .txt1 {
-	margin-top:196px;
+	
+	//margin-top:196px;
 	font-weight:bold;
 	font-size:18px;
 	font-style:italic;
 	padding-left:10px;
     padding-top: 5px;
-	background:url(../images/loginBg.png) repeat;
+	width:393px;
 }
 .contBoxHome .txt2 {
 	font-weight:bold;
@@ -613,8 +621,8 @@ childImg {
 	padding-left:10px;
 	line-height: 16px;
     padding-bottom: 10px;
-	background:url(../images/loginBg.png) repeat;
 }
+/*
 .contBoxHome.boxOne {
 	background:url(../images/home/affiliate-banner1.jpg) no-repeat;
 	height:249px;
@@ -629,7 +637,7 @@ childImg {
 	background:url(../images/home/affiliate-banner3.jpg) no-repeat;
 	height:249px;
 	width:32.7%;
-}
+}*/
 /****************************
 	 REGISTRATION
 *****************************/
@@ -1292,7 +1300,7 @@ body.faq {
 	margin:0 auto;
 	color:#fff;
 	margin-top:20px;
-	padding-left:6%;
+	//padding-left:6%;
 }
 .bordots {
 	width:33.2%;
@@ -1640,9 +1648,13 @@ body.faq {
 		margin-right:0px;
 		margin-bottom:20px;
 		color:#fff;
-		padding-top:196px;
-		height:249px;
+		//padding-top:196px;
+		height:auto;
 		z-index:1;
+	}
+	.contBoxHome img {
+		width:100%;
+		height:auto;
 	}
 	.contBoxHome .txt1 {
 		margin-top:0;
