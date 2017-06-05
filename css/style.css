@@ -970,8 +970,9 @@ body.page-mobile {
 	PROMOTION PAGE
 **********************************************/
 body.page-promotion {
-    background: #080808;
+    background: #030303;
 }
+
 .contentPromotion {
     background: url(../images/promotion/promotion_bg_vip.jpg) top center no-repeat;
 }
