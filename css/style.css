@@ -494,6 +494,17 @@ body {
 	position:relative;
 	min-height:300px;
 }
+childImg {
+	position:absolute;
+	left:0;
+	top:0;
+	border:1px solid red;
+	height:auto;
+	width:auto;
+}
+.businessman {
+	max-width:379px !important;
+}
 .childSlide {
 	position:absolute;
 	right:8%;
@@ -569,7 +580,7 @@ body {
 	//position:absolute;
 	display:block;
 	width:1200px;
-	margin:20px auto 45px auto;
+	margin:0px auto 45px auto;
 	z-index:1 !important;
 	//margin-bottom:45px;
 	//right: 4%;
