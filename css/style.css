@@ -1046,6 +1046,7 @@ body.page-promotion {
     display: block;
     margin: 0;
     max-width: 100%;
+    float: right;
 }
 #Promotion-plan {
     padding-left: 24px;
