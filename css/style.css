@@ -1278,7 +1278,8 @@ body.faq {
     font-size: 17px;
 }
 .faq-content {
-    background: #eee;
+    background: url(../images/home/affiliate-casino1.jpg) top center no-repeat;
+    background-size: cover;
     padding: 10px 20px;
 }
 .faq-panel {
@@ -1402,6 +1403,9 @@ body.faq {
     font-size: 20px;
     font-weight: 700;
     margin: 5px 0 10px;
+}
+.faq-content.disclaimer .faq-panel {
+    min-height: 573px;
 }
 /*********************************************
 	END FAQ PAGE
