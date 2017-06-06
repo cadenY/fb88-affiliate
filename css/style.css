@@ -12,6 +12,7 @@
 
 html {
 	box-sizing: border-box;
+  height: 100%;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -22,8 +23,14 @@ body {
 	padding: 0;
 	font-family: Arial;
 	font-size: 12px;
+  background: #028843;
+  position: relative;
+  height: 100%;
 }
-
+.wrapper {
+  background: #1b1b1b;
+  height: 100%;
+}
 /*********************************************
 	GLOBAL
 **********************************************/
@@ -41,6 +48,7 @@ body {
 	margin:0 auto;
 	//max-width: 1200px;
 	position:relative;
+  height: 100%;
 }
 .floatL {
 	float:left;
@@ -492,13 +500,12 @@ body {
 }
 .parentSlide {
 	position:relative;
-	min-height:300px;
+	min-height:480px;
 }
-childImg {
+.childImg {
 	position:absolute;
 	left:0;
 	top:0;
-	border:1px solid red;
 	height:auto;
 	width:auto;
 }
@@ -648,7 +655,7 @@ childImg {
 .img-ban1 {
 	text-align: center;
 	margin-bottom:20px;
-
+  margin-top: 20px;
 }
 .img-ban1 img {
 	width:100%;
@@ -671,7 +678,7 @@ childImg {
 .regTextMid .regTextMidCont {
 	line-height:30px;
 	font-size:12px;
-	color: #3c3c3b;
+	color: #fff;
 }
 .regBox {
 	padding:10px;
@@ -894,11 +901,11 @@ label {
 	PRODUCT PAGE
 **********************************************/
 .contentProducts {
-	background:#090909;
+	background:#1b1b1b;
 }
 .contProdSlide {
-	background:url(../images/prodBg.jpg) repeat;
-	padding:40px 0;
+	//background:url(../images/prodBg.jpg) repeat;
+	padding-bottom: 40px;
 }
 .contProdSlide .bx-pager {
 	display:inline-block !important;
@@ -1258,7 +1265,7 @@ table.aff-tble tr {
 
 /* faq */
 body.faq {
-    background: #eee !important;
+    //background: #eee !important;
 }
 .faq-header {
     background: #028843;
@@ -1278,14 +1285,15 @@ body.faq {
     font-size: 17px;
 }
 .faq-content {
-    background: url(../images/home/affiliate-casino1.jpg) top center no-repeat;
-    background-size: cover;
+    //background: url(../images/home/affiliate-casino1.jpg) top center no-repeat;
+    //background-size: cover;
+    background: #1b1b1b;
     padding: 10px 20px;
 }
 .faq-panel {
     max-width: 1200px;
     margin: 0 auto;
-    background: #fff;
+    background: #121212;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1294,7 +1302,7 @@ body.faq {
 }
 .accdn-panel h2 {
     display: block;
-    background: #ffff;
+  //  background: #ffff;
     color: #757575;
     cursor: pointer;
     font-size: 17px;
@@ -1305,8 +1313,8 @@ body.faq {
     /*border-bottom: 1px solid #dbdbdb;*/
     font-weight: 400;
     margin: 0;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+  //  -webkit-transition: all 0.4s ease;
+  //  transition: all 0.4s ease;
     padding-right: 65px;
 }
 .accdn-panel h2::after {
@@ -1316,7 +1324,7 @@ body.faq {
     top: 15px;
     font-size: 18px;
     color: #B3B3B3 !important;
-    transition: all 0.2s ease;
+    //transition: all 0.2s ease;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -1326,7 +1334,7 @@ body.faq {
 .accdn-panel h2:hover {
     background: #028843;
     color: #fff;
-    padding-left: 25px;
+    //padding-left: 25px;
 }
 .accdn-panel h2.active::after {
     content: '>';
@@ -1403,12 +1411,31 @@ body.faq {
     font-size: 20px;
     font-weight: 700;
     margin: 5px 0 10px;
+    color: #fff;
 }
 .faq-content.disclaimer .faq-panel {
-    min-height: 573px;
+    //min-height: 573px;
 }
 /*********************************************
 	END FAQ PAGE
+**********************************************/
+
+/*********************************************
+	PRIVACY & POLICY PAGE
+**********************************************/
+.wrapper.priv {
+  padding: 20px;
+}
+.privCont {
+  background: #121212;
+  padding: 40px;
+  height: 100%;
+}
+.privPush {
+  margin: 20px 0;
+}
+/*********************************************
+	END PRIVACY & POLICY PAGE
 **********************************************/
 
 
@@ -1913,8 +1940,18 @@ body.faq {
 		width:100%;
 		text-align:center;
 		box-sizing:border-box;
+    padding: 10px 0;
 	}
-
+  .copy.footbox span {
+    display: block;
+    margin-top: 10px;
+  }
+  .bordots {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
 
 
 }
