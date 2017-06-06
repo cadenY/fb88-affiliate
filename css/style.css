@@ -523,7 +523,7 @@ childImg {
 .childTwo {
 	font-size:86px;
 	line-height:55px;
-	
+
 }
 .childTwo .eighteight {
 	color:#fee71b;
@@ -608,7 +608,7 @@ childImg {
 	left:0;
 }
 .contBoxHome .txt1 {
-	
+
 	//margin-top:196px;
 	font-weight:bold;
 	font-size:18px;
@@ -952,7 +952,7 @@ body.page-mobile {
     background: #000;
 }
 .contentMobile{
-   
+
 }
 
 .Mobile-wrap {
@@ -1073,9 +1073,34 @@ body.page-promotion {
 /*********************************************
 	END PROMOTION PAGE
 **********************************************/
+/*********************************************
+	PROMOTION PAGE
+**********************************************/
 
-
-
+/*********************************************
+	END PROMOTION PAGE
+**********************************************/
+.forgotForm {
+  padding:70px 0;
+}
+.forgotForm input[type=text] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.forgotForm .btnSubmit {
+  background: #fee71b;
+  color: #262201;
+  height: 35px;
+  line-height: 35px;
+  width: 150px;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px;
+  font-family: Arial;
+}
 /*********************************************
 	COMMISSION PAGE
 **********************************************/
