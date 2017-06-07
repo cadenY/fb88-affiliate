@@ -9,6 +9,31 @@
   font-weight: normal;
   font-style: normal;
 }
+.stack {
+	overflow:hidden;
+}
+#loader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: #1b1b1b;
+     z-index: 9999999;
+    height: 100%;
+ }
+
+#status  {
+     width: 230px;
+     height: 205px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     background-image: url(../images/Preloader_4.gif);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+ }
 
 html {
 	box-sizing: border-box;
