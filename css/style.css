@@ -1000,8 +1000,9 @@ margin-bottom: 40px;
 	PROMOTION PAGE
 **********************************************/
 body.page-promotion {
-    background: #080808;
+    background: #030303;
 }
+
 .contentPromotion {
     background: url(../images/promotion/promotion_bg_vip.jpg) top center no-repeat;
 }
@@ -1075,9 +1076,11 @@ body.page-promotion {
     display: block;
     margin: 0;
     max-width: 100%;
+    float: right;
 }
 #Promotion-plan {
     padding-left: 24px;
+    padding-right: 24px;
 }
 #Promotion-plan .inner {
     padding: 0 48px;
@@ -1700,17 +1703,21 @@ body.faq {
         padding-left: 60px;
         padding-right: 60px;
     }
-    .comm-banner {
+    .comm-banner,
+    .Promotion-banner {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    .comm-banner .text {
+    .comm-banner .text,
+    .Promotion-banner .text {
         float: none;
         padding-left: 48px;
     }
-    .comm-banner .img {
+    .comm-banner .img,
+    .Promotion-banner .img {
         display: none;
     }
+
     #comm-plan h2 {
         margin-left: 24px;
         margin-bottom: 20px;
@@ -2020,6 +2027,25 @@ body.faq {
 		line-height:50px;
 	}
 
+    .Promotion-banner .text {
+        padding-left: 40px;
+    }
+    .Promotion-banner .text h4 {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .Promotion-banner .text h2,
+    .Promotion-banner .text h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+    #Promotion-plan .inner {
+        padding: 0 15px;
+    }
+    #Promotion-plan .inner > ul li ul {
+        margin-left: 0;
+        padding-left: 0    ;
+    }
 }
 @media screen and (max-width : 500px){
 	/*HEADER*/
@@ -2095,6 +2121,22 @@ body.faq {
         padding-right: 10px;
     }
     table.aff-tble {
+        margin-left: 0;
+    }
+    .Promotion-banner .text {
+        padding-left: 15px;
+    }
+    #Promotion-plan,
+    #Promotion-plan .inner {
+        padding: 0 10px;
+    }
+    #Promotion-plan .inner > ul {
+        margin-left: 0;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    #Promotion-plan .inner > ul li ul {
+        padding-left: 0;
         margin-left: 0;
     }
 }
