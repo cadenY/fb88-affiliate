@@ -29,7 +29,7 @@ body {
 }
 .wrapper {
   background: #1b1b1b;
-  height: 100%;
+  //height: 100%;
 }
 /*********************************************
 	GLOBAL
@@ -961,13 +961,36 @@ body.page-mobile {
 .contentMobile{
 
 }
-
-.Mobile-wrap {
-    max-width: 1572px;
-    width: 100%;
-    margin: 0 auto;
+.mobQr {
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 40px;
 }
+.mobCont {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  font-style: italic;
 
+}
+.topTitle {
+margin-bottom: 40px;
+}
+.divbtnMob {
+  padding-bottom: 80px;
+}
+.btnMob {
+  width: 166px;
+  height: 46px;
+  margin: 0 auto;
+  line-height: 46px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background: #028843;
+}
 
 /*********************************************
 	END PRODUCT PAGE
@@ -1425,6 +1448,7 @@ body.faq {
 **********************************************/
 .wrapper.priv {
   padding: 20px;
+  height: 100%;
 }
 .privCont {
   background: #121212;
@@ -1659,6 +1683,11 @@ body.faq {
 	.contBoxHome  {
 		margin-bottom:10px;
 	}
+
+  .mobImg img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 992px) {
 	.marquee{
@@ -1698,6 +1727,9 @@ body.faq {
 	.marquee{
 		width:32%;
 	}
+  .mobQr {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width : 768px){
