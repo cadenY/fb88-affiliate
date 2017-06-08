@@ -1,13 +1,11 @@
 $( document ).ready(function() {
    // alert( "ready!" );
-	
+   //PRELOAD
 	setTimeout(function(){
 		$("#status").fadeOut("slow"); 
 		$("#loader").delay(100).fadeOut(); 
 		$("body").removeClass("stack"); 
-	}, 1500);
-
-	
+	}, 2000);
 	// TIME
 	var intervals = setInterval(function() {
         var momentNow = new Date().toLocaleString();

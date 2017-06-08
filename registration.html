@@ -70,7 +70,7 @@
 
       <form action="" method="">
           <div class="regBox">
-            <div class="regBoxTitle"><img src="images/registration/paper-pen.png" />Affiliate Login Information</div>
+            <div class="regBoxTitle"><img src="images/registration/paper-pen.png" />Affiliate General Information</div>
                 <div class="regCont">
 
                         <div class="info">Fields marked with asterisk are compulsory</div>
@@ -104,7 +104,7 @@
 
                         <div class="contBox clearfix">
                             <div class="leftReg floatL">Contact No:<span class="important">*</span></div>
-                            <div class="rightReg floatL"><input type="text" value="" name="phone1" class="phone1" /> <input type="text" value="" name="phone2" class="input phone2" id="phone2" />
+                            <div class="rightReg floatL"><input type="text" value="" name="phone1" class="phone1"  maxlength="2"/> <input type="text" value="" name="phone2" class="input phone2" id="phone2" />
                                 <div class="tooltips">
                                     <p>
                                       Please enter your Contact Number.
@@ -131,10 +131,10 @@
                             <div class="rightReg floatL">
                                 <select name="country" id="country" class="halfwidth input">
                                     <option value="china">China</option>
-                                    <option value="Bhs Indonesia">Bhs Indonesia</option>
-                                    <option value="Tiếng Việt">Tiếng Việt</option>
-                                    <option value="ไทย">ไทย</option>
-                                    <option value="Khmer">Khmer</option>
+                                    <option value="Bhs Indonesia">Indonesia</option>
+                                    <option value="Tiếng Việt">Vietnam</option>
+                                    <option value="ไทย">Thailand</option>
+                                    <option value="Khmer">Cambodia</option>
                                 </select>
                                 <div class="tooltips">
                                     <p>
@@ -193,7 +193,7 @@
                             <div class="rightReg floatL">
                                 <select name="currency" id="currency" class="input">
                                     <option value="USD">USD</option>
-                                    <option value="RMD">RMD</option>
+                                    <option value="RMD">RMB</option>
                                     <option value="VND">VND</option>
                                 </select>
                                 <div class="tooltips">
@@ -288,7 +288,7 @@
                         </div><!--contBox -->
                          <div class="contBox clearfix">
                             <div class="r"><input type="checkbox" id="accept"><label for="accept">I confirmed that I have read, understand and
-accept the <a href="#" target="_blank">Terms and Conditions.</a></label></div>
+accept the <a href="terms.html" target="_blank">Terms and Conditions.</a></label></div>
                         </div><!--contBox -->
                         <div class="forSubmit">
                         	<input type="button" name="submitForm" class="frmSubmit" value="Submit">
@@ -308,7 +308,6 @@ accept the <a href="#" target="_blank">Terms and Conditions.</a></label></div>
 
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/register/jquery.datetimepicker.full.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/register/regFunction.js"></script>
     <script>
         $(function(){

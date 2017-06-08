@@ -9,31 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.stack {
-	overflow:hidden;
-}
-#loader  {
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     background: #1b1b1b;
-     z-index: 9999999;
-    height: 100%;
- }
-
-#status  {
-     width: 230px;
-     height: 205px;
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     background-image: url(../images/Preloader_4.gif);
-     background-repeat: no-repeat;
-     background-position: center;
-     margin: -100px 0 0 -100px;
- }
 
 html {
 	box-sizing: border-box;
@@ -56,6 +31,34 @@ body {
   background: #1b1b1b;
   //height: 100%;
 }
+/*********************************************
+	PRELOAD
+**********************************************/
+.stack {
+	overflow:hidden;
+}
+#loader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: #1b1b1b;
+     z-index: 99999999999;
+    height: 100%;
+ }
+
+#status  {
+     width: 128px;
+     height: 128px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     background-image: url(../images/preloader.gif);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+ }
 /*********************************************
 	GLOBAL
 **********************************************/
@@ -592,6 +595,24 @@ body {
 	z-index:99999 !important;
 }
 
+.childFive {
+	font-size:56px;
+	line-height:55px;
+}
+
+.childFive .eighteight {
+	color:#fee71b;
+}
+
+.childSix {
+	font-size:96px;
+	line-height:90px;
+}
+.childSix .eighteight {
+	color:#fee71b;
+}
+
+
 .slider1 {
 	width:100%;
 	background:url(../images/home/affiliate-casino1.jpg) no-repeat center top;
@@ -626,8 +647,8 @@ body {
 	color:#fff;
 	z-index:1;
 	position:relative;
-	box-shadow: 0 0 10px #fff !important;
-	border:2px solid #fff;
+	box-shadow: 0 0 10px #fee71b !important;
+	border:2px solid #fee71b;
 	overflow:hidden;
 }
 .contBoxHome:last-child {
@@ -930,7 +951,7 @@ label {
 }
 .contProdSlide {
 	//background:url(../images/prodBg.jpg) repeat;
-	padding-bottom: 40px;
+	padding-bottom: 1px;
 }
 .contProdSlide .bx-pager {
 	display:inline-block !important;
@@ -1344,7 +1365,7 @@ body.faq {
 .faq-panel {
     max-width: 1200px;
     margin: 0 auto;
-    background: #121212;
+    background: #1b1b1b;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1354,7 +1375,7 @@ body.faq {
 .accdn-panel h2 {
     display: block;
   //  background: #ffff;
-    color: #757575;
+    color: #fff;
     cursor: pointer;
     font-size: 17px;
     padding: 15px;
@@ -1402,7 +1423,7 @@ body.faq {
     padding: 20px 20px;
     font-size: 16px;
     line-height: 23px;
-    color: #757575;
+    color: #a0a0a0;
     display: none;
     border: 1px #dbdbdb solid;
     border-bottom: none;
@@ -1418,6 +1439,7 @@ body.faq {
     line-height: 24px;
     text-transform: none;
     font-weight: 400;
+	color:#a0a0a0;
 }
 .accdn-panel .accdn-content.noanimate.static p {
     margin-bottom: 8px;
@@ -1462,7 +1484,7 @@ body.faq {
     font-size: 20px;
     font-weight: 700;
     margin: 5px 0 10px;
-    color: #fff;
+    color: #fee71b;
 }
 .faq-content.disclaimer .faq-panel {
     //min-height: 573px;
@@ -1479,7 +1501,7 @@ body.faq {
   height: 100%;
 }
 .privCont {
-  background: #121212;
+  /*background: #121212;*/
   padding: 40px;
   height: 100%;
 }

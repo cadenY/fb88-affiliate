@@ -54,7 +54,7 @@ $( document ).ready(function() {
 	
 	$('#phone2').focusout(function() {
 		var phone = $(this).val();
-		if(phone != '') {
+		if(phone !== "") {
 			$('.d.okcheck').show();
 			$('.d.okcross').hide();
 		}else {
@@ -63,8 +63,9 @@ $( document ).ready(function() {
 		}
 	});
 	$('#phone2').keyup(function(){
-		var pnum = new RegExp(/[0-9 -()+]+$/);
-		if(pnum.test($("#phone").val())) {
+			var phone = $(this).val();
+		//var pnum = new RegExp('^[0-9]+$');
+		if(phone !== "") {
 			$(this).css("border-color", "#028843");
 			$('.c.okcheck').show();
 			$('.c.okcross').hide();
@@ -74,10 +75,47 @@ $( document ).ready(function() {
 			$('.c.okcheck').hide();
 		}
 	});
+	//stop character from entering input
+	$('#phone2').keypress(function(event){
+		return numberOnly(this, event)
+   });
+   $('#phone1').keypress(function(event){
+		return numberOnly(this, event)
+   });
+
+	//Numbers
+	function numberOnly(myfield, e, dec)
+	{
+	var key;
+	var keychar;
 	
+	if (window.event)
+	   key = window.event.keyCode;
+	else if (e)
+	   key = e.which;
+	else
+	   return true;
+	keychar = String.fromCharCode(key);
 	
+	// control keys
+	if ((key==null) || (key==0) || (key==8) || 
+		(key==9) || (key==13) || (key==27) || (key==32))
+	   return true;
 	
+	// numbers
+	else if ((("1234567890").indexOf(keychar) > -1))
+	   return true;
 	
+	// decimal point jump
+	else if (dec && (keychar == "."))
+	   {
+	   myfield.form.elements[dec].focus();
+	   return false;
+	   }
+	else
+	   return false;
+	}
+
 	
 	
 	
