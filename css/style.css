@@ -1729,15 +1729,22 @@ body.faq {
 	}
 	.contHomeDiv {
 		width:100%;
+		padding-left:20px;
 	}
 	.contBoxHome  {
 		margin-bottom:10px;
+		width:32%;
+		height:auto;
 	}
-
-  .mobImg img {
-    width: 100%;
-    height: auto;
-  }
+	.contBoxHome img {
+		width: 100%;
+		height: auto
+	}
+	.mobImg img {
+		width: 100%;
+		height: auto;
+	}
+	
 }
 @media screen and (max-width: 992px) {
 	.marquee{
@@ -1939,6 +1946,9 @@ body.faq {
 	.contBoxHome img {
 		width:100%;
 		height:auto;
+	}
+	.txtContBox {
+		width:500px;
 	}
 	.contBoxHome .txt1 {
 		margin-top:0;
