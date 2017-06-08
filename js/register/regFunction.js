@@ -9,71 +9,35 @@ $( document ).ready(function() {
           format:'d/m/Y',
           formatDate:'Y/m/d',
 	});
-	
+
+	$.fn.myCondition = function () {
+		 if ($(this).val() === '') {
+			$(this).css("border-color", "#ec0000");
+			$('~ .okcheck', $(this)).hide();
+			$('~ .okcross', $(this)).show();
+		  } else {
+			$(this).css("border-color", "#028843");
+			$('~ .okcheck', $(this)).show();
+			$('~ .okcross', $(this)).hide();
+		  }
+	}
 	//fullname, when there is data
 	$('#fullname').focusout(function() {
-		var fname = $(this).val();
-		if(fname != '') {
-			$('.a.okcheck').show()
-			$('.a.okcross').hide();
-		}else {
-			$('.a.okcross').show();
-			$('.a.okcheck').hide();
-			$(this).css("border-color", "#ec0000");
-		}
+		 $(this).myCondition();
 	});
 	//when typing keyup
 	$('#fullname').keyup(function(){
-		var fullname = $(this).val();
-		if(fullname != '') {
-			$(this).css("border-color", "#028843");
-			$('.a.okcheck').show()
-			$('.a.okcross').hide();
-		}
-		else {
-			$(this).css("border-color", "#ec0000");
-			$('.a.okcross').show();
-			$('.a.okcheck').hide();
-		}
+		 $(this).myCondition();
 	});
 	
 	$('#dob').focusout(function() {
-		var dob = $(this).val();
-		if(dob != '') {
-			$('.b.okcheck').show();
-			$('.b.okcross').hide();
-			$(this).css("border-color", "#028843");
-		}else {
-			$('.b.okcross').show();
-			$('.b.okcheck').hide()
-			$(this).css("border-color", "#ec0000");
-		}
+		  $(this).myCondition();
 	});
-	
-	
-	
 	$('#phone2').focusout(function() {
-		var phone = $(this).val();
-		if(phone !== "") {
-			$('.d.okcheck').show();
-			$('.d.okcross').hide();
-		}else {
-			$('.d.okcross').show();
-			$('.d.okcheck').hide();
-		}
+		 $(this).myCondition();
 	});
 	$('#phone2').keyup(function(){
-			var phone = $(this).val();
-		//var pnum = new RegExp('^[0-9]+$');
-		if(phone !== "") {
-			$(this).css("border-color", "#028843");
-			$('.c.okcheck').show();
-			$('.c.okcross').hide();
-		} else {
-			$(this).css("border-color", "#ec0000");
-			$('.c.okcross').show();
-			$('.c.okcheck').hide();
-		}
+		 $(this).myCondition();
 	});
 	//stop character from entering input
 	$('#phone2').keypress(function(event){
@@ -116,113 +80,62 @@ $( document ).ready(function() {
 	   return false;
 	}
 
-	
-	
-	
-	
 	// when there is data
 	$('#email').focusout(function() {
 		var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
 		if(pattern.test($("#email").val())) {
 			$(this).css("border-color", "#028843");
-			$('.d.okcheck').show();
-			$('.d.okcross').hide();
-		} else {
+			$('~ .okcheck', $(this)).hide();
+			$('~ .okcross', $(this)).show();
+		  } else {
 			$(this).css("border-color", "#ec0000");
-			$('.d.okcross').show();
-			$('.d.okcheck').hide();
-
-		}
+			$('~ .okcheck', $(this)).show();
+			$('~ .okcross', $(this)).hide();
+		  }
 	});
 	$('#email').keyup(function(){
 		var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
 		if(pattern.test($("#email").val())) {
 			$(this).css("border-color", "#028843");
-			$('.d.okcheck').show();
-			$('.d.okcross').hide();
-		} else {
+			$('~ .okcheck', $(this)).hide();
+			$('~ .okcross', $(this)).show();
+		  } else {
 			$(this).css("border-color", "#ec0000");
-			$('.d.okcross').show();
-			$('.d.okcheck').hide();
-
-		}
+			$('~ .okcheck', $(this)).show();
+			$('~ .okcross', $(this)).hide();
+		  }
 	});
 	
 	$('#country').focusout(function() {
-		var cur = $(this).val();
-		if(cur != '') {
-			$('.e.okcheck').show();
-			$('.e.okcross').hide();
-		}else {
-			$('.e.okcross').show();
-			$('.e.okcheck').hide();
-		}
+		$(this).myCondition();
 	});
 	
 	$('#social1').focusout(function() {
-		var cur = $(this).val();
-		if(cur != '') {
-			$('.f.okcheck').show();
-			$('.f.okcross').hide();
-		}else {
-			$('.f.okcross').show();
-			$('.f.okcheck').hide();
-		}
+		$(this).myCondition();
 	});
 	$('#social2').focusout(function() {
-		var cur = $(this).val();
-		if(cur != '') {
-			$('.g.okcheck').show();
-			$('.g.okcross').hide();
-		}else {
-			$('.g.okcross').show();
-			$('.g.okcheck').hide();
-		}
+		$(this).myCondition();
 	});
 	$('#lang').focusout(function() {
-		var cur = $(this).val();
-		if(cur != '') {
-			$('.h.okcheck').show();
-			$('.h.okcross').hide();
-		}else {
-			$('.h.okcross').show();
-			$('.h.okcheck').hide();
-		}
+		$(this).myCondition();
 	});
 	$('#currency').focusout(function() {
-		var cur = $(this).val();
-		if(cur != '') {
-			$('.i.okcheck').show();
-			$('.i.okcross').hide();
-		}else {
-			$('.i.okcross').show();
-			$('.i.okcheck').hide();
-		}
+		$(this).myCondition();
 	});
 	
-	
 	$('#user').focusout(function() {
-		var user = $(this).val();
-		if(user != '') {
-			$('.j.okcheck').show();
-			$('.j.okcross').hide();
-		}else {
-			$('.j.okcross').show();
-			$('.j.okcheck').hide();
-			$(this).css("border-color", "#ec0000");
-		}
+		$(this).myCondition();
 	});
 	$('#user').keyup(function(){
 		if($(this).val().length > 8 ) {
 			$(this).css("border-color", "#028843");
-			$('.j.okcheck').show();
-			$('.j.okcross').hide();
-		}
-		else {
+			$('~ .okcheck', $(this)).hide();
+			$('~ .okcross', $(this)).show();
+		  } else {
 			$(this).css("border-color", "#ec0000");
-			$('.j.okcross').show();
-			$('.j.okcheck').hide();
-		}
+			$('~ .okcheck', $(this)).show();
+			$('~ .okcross', $(this)).hide();
+		  }
 	});
 	
 	
@@ -230,19 +143,15 @@ $( document ).ready(function() {
 	$('#pass').focusout(function() {
 		var pass = $('#result').val();
 		if($('#result').hasClass('strong')) {
-			$('.k.okcheck').show();
-			$('.k.okcross').hide();
+			$('~ .okcheck', $(this)).show();
+			$('~ .okcross', $(this)).hide();
 			$(this).css("border-color", "#028843");
 		}else {
-			$('.k.okcross').show();
-			$('.k.okcheck').hide();
+			$('~ .okcheck', $(this)).hide();
+			$('~ .okcross', $(this)).show();
 			$(this).css("border-color", "#ec0000");
 		}
 	});
-
-
-
-
 
 	$('#pass').keyup(function()
 	{
@@ -289,95 +198,33 @@ $( document ).ready(function() {
 	}
 	
 	$('#cpass').focusout(function() {
-		var cpass = $(this).val();
-		var pass = $('#pass').val();
-		if(cpass == pass) {
-			$('.l.okcheck').show();
-			$('.l.okcross').hide();
+		var passwordkey = $("#pass").val();
+		var retype_passwordkey = $("#cpass").val();
+		if( retype_passwordkey == passwordkey ) {
 			$(this).css("border-color", "#028843");
-		}else {
-			$('.l.okcross').show();
-			$('.l.okcheck').hide();
+			$('~ .okcheck', $(this)).show();
+			$('~ .okcross', $(this)).hide();
+		  } else {
 			$(this).css("border-color", "#ec0000");
-		}
+			$('~ .okcheck', $(this)).hide();
+			$('~ .okcross', $(this)).show();
+		  }
 	});
 
 	$('#cpass').keyup(function(){
 		var passwordkey = $("#pass").val();
 		var retype_passwordkey = $("#cpass").val();
-
 		if( retype_passwordkey == passwordkey ) {
-			$('.l.okcheck').show();
-			$('.l.okcross').hide();
 			$(this).css("border-color", "#028843");
-		} else {
+			$('~ .okcheck', $(this)).show();
+			$('~ .okcross', $(this)).hide();
+		  } else {
 			$(this).css("border-color", "#ec0000");
-			$('.l.okcross').show();
-			$('.l.okcheck').hide();
-		}
-	});
-	
-	
-	$('#url').focusout(function() {
-		var url = $(this).val();
-		if(cpass != '') {
-			$('.m.okcheck').show();
-			$('.m.okcross').hide();
-			$(this).css("border-color", "#028843");
-		}else {
-			$('.m.okcross').show();
-			$('.m.okcheck').hide();
-			$(this).css("border-color", "#ec0000");
-		}
+			$('~ .okcheck', $(this)).hide();
+			$('~ .okcross', $(this)).show();
+		  }
 	});
 
-	$('#url').keyup(function(){
-		var url = $("#pass").val();
-		if( url != '' ) {
-			$('.m.okcheck').show();
-			$('.m.okcross').hide();
-			$(this).css("border-color", "#028843");
-		} else {
-			$(this).css("border-color", "#ec0000");
-			$('.m.okcross').show();
-			$('.m.okcheck').hide();
-		}
-	});
-	
-	$('#capt').focusout(function() {
-		var url = $(this).val();
-		if(url != '') {
-			$('.n.okcheck').show();
-			$('.n.okcross').hide();
-			$(this).css("border-color", "#028843");
-		}else {
-			$('.n.okcross').show();
-			$('.n.okcheck').hide();
-			$(this).css("border-color", "#ec0000");
-		}
-	});
-
-	$('#capt').keyup(function(){
-		var capt = $("#pass").val();
-		if( capt != '' ) {
-			$('.n.okcheck').show();
-			$('.n.okcross').hide();
-			$(this).css("border-color", "#028843");
-		} else {
-			$(this).css("border-color", "#ec0000");
-			$('.n.okcross').show();
-			$('.n.okcheck').hide();
-		}
-	});
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 });
