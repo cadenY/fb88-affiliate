@@ -1930,7 +1930,7 @@ body.faq {
 		box-sizing:border-box;
 		margin-top:20px;
 	}
-	.businessman {
+	.childImg {
 		display: none !important;
 	}
 	.contBoxHome {
@@ -1952,6 +1952,10 @@ body.faq {
 	}
 	.contBoxHome .txt1 {
 		margin-top:0;
+	}
+	.parentSlide {
+		position:relative;
+		min-height:350px;
 	}
 
 	/*REGISTRATION*/
@@ -2079,7 +2083,10 @@ body.faq {
 	.childTwo {
 		font-size:60px;
 	}
-	.childThree {
+	 .childFive {
+		font-size:50px;
+	}
+	.childThree, .childSix {
 		font-size: 60px;
 		line-height:50px;
 	}
@@ -2127,13 +2134,18 @@ body.faq {
 	/*HOME*/
 	.contHomeDiv {
 		position:static;
-		width: 400px;
-		margin:0 auto;
+		width: 100%;
+		margin-left:0;
 		box-sizing:border-box;
 		margin-top:20px;
+		padding:0 40px;
 	}
 	.parentSlide {
 	//	min-height: 320px;
+	}
+	.childSlide {
+		position:static;
+		padding:0 40px;
 	}
 	.childOne {
 		font-size: 22px;
@@ -2141,9 +2153,16 @@ body.faq {
 	.childTwo {
 		font-size:40px;
 	}
-	.childThree {
+	 .childFive {
+		font-size:32px;
+	}
+	.childThree{
 		font-size: 40px;
 		line-height:40px;
+	}
+	.childSix {
+		font-size: 32px;
+		line-height:32px;
 	}
 
     /* about page */
