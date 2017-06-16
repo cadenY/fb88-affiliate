@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="css/jquery.datetimepicker.css" type="text/css" />
+<div class="clearfix">
+                        <h1>My Account</h1>
+                        <div class="accountBox leftAccountBox">
+                            <div class="accountBoxTitle">Account Details</div>
+                            <div class="accountBoxContent">
+                                <div class="aboxCont">
+                                    <p>Fullname: <span>my fullname</span></p>
+                                    <p>Date of Birth: <span>22/11/1980</span></p>
+                                    <p>Email: <span>se***sa@gmail.com</span></p>
+                                    <p>Username: <span>test</span></p>
+                                    <p>Gender: <span>Male</span></p>
+                                    <p>Currency: <span>USD</span></p>
+                                </div>
+                            </div>
+                        </div><!--leftAccountBox -->
+
+
+                        <div class="accountBox rightAccountBox">
+                            <div class="accountBoxTitle">Update Account Details</div>
+                            <div class="accountBoxContent">
+                                <div class="aboxCont">
+                                    <form action="" method="">
+                                        <table width="100%">
+                                            <tr>
+                                                <td class="" width="40%">Contact: <span class="important">*</span> </td>
+                                                <td class="dum">
+                                                  <input type="text" class="bankinput input" id="contact">
+                                                  <div class="tooltips">
+                                                      <p>
+                                                        Please input Contact Number.
+                                                      </p>
+                                                	</div>
+                                                  <span class="okcheck"><img src="images/check.png"></span><span class="okcross"><img src="images/cross.png"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="">Date of Birth: <span class="important">*</span> </td>
+                                                <td class="dum">
+                                                  <input type="text" class="bankinput input" id="dob" >
+                                                  <div class="tooltips">
+                                                      <p>
+                                                        Please input your Date of Birth.
+                                                      </p>
+                                                	</div>
+                                                  <span class="okcheck"><img src="images/check.png"></span>
+                                                  <span class="okcross"><img src="images/cross.png"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="">Gender: <span class="important">*</span> </td>
+                                                <td class="dum">
+                                                  <select name="gender" class="bankinput input" id="gender">
+                                                    <option value="">Select Gender</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                  </select>
+                                                  <div class="tooltips">
+                                                      <p>
+                                                        Please input your Gender.
+                                                      </p>
+                                                	</div>
+                                                  <span class="okcheck"><img src="images/check.png"></span><span class="okcross"><img src="images/cross.png"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="">Security Question: <span class="important">*</span> </td>
+                                                <td class="dum">
+                                                  <input type="text" class="bankinput input" id="secQuestion">
+                                                  <div class="tooltips">
+                                                      <p>
+                                                        Please input your Security Question.
+                                                      </p>
+                                                	</div>
+                                                  <span class="okcheck"><img src="images/check.png"></span><span class="okcross"><img src="images/cross.png"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="">Security Answer: <span class="important">*</span> </td>
+                                                <td class="dum">
+                                                  <input type="text" class="bankinput input" id="secAnswer">
+                                                  <div class="tooltips">
+                                                      <p>
+                                                        Please input your Security Answer.
+                                                      </p>
+                                                	</div>
+                                                  <span class="okcheck"><img src="images/check.png"></span><span class="okcross"><img src="images/cross.png"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""></td>
+                                                <td><input type="button" class="btnBankSubmit"  value="Submit"></td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!--rightAccountBox -->
+
+
+                    </div>
+<script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
+
+<script>
+    $(function() {
+        //DATE OF BIRTH
+        $('#dob').datetimepicker({
+          yearOffset:0,
+          lang:'en',
+          timepicker:false,
+          format:'d/m/Y',
+          formatDate:'Y/m/d',
+        });
+    });
+</script>

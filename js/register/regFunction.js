@@ -1,6 +1,6 @@
 $( document ).ready(function() {
    // alert( "ready!" );
-   
+
 	//DATEPICKER
     $('#dob').datetimepicker({
           yearOffset:0,
@@ -29,7 +29,7 @@ $( document ).ready(function() {
 	$('#fullname').keyup(function(){
 		 $(this).myCondition();
 	});
-	
+
 	$('#dob').focusout(function() {
 		  $(this).myCondition();
 	});
@@ -52,7 +52,7 @@ $( document ).ready(function() {
 	{
 	var key;
 	var keychar;
-	
+
 	if (window.event)
 	   key = window.event.keyCode;
 	else if (e)
@@ -60,16 +60,16 @@ $( document ).ready(function() {
 	else
 	   return true;
 	keychar = String.fromCharCode(key);
-	
+
 	// control keys
-	if ((key==null) || (key==0) || (key==8) || 
+	if ((key==null) || (key==0) || (key==8) ||
 		(key==9) || (key==13) || (key==27) || (key==32))
 	   return true;
-	
+
 	// numbers
 	else if ((("1234567890").indexOf(keychar) > -1))
 	   return true;
-	
+
 	// decimal point jump
 	else if (dec && (keychar == "."))
 	   {
@@ -105,11 +105,11 @@ $( document ).ready(function() {
 			$('~ .okcross', $(this)).hide();
 		  }
 	});
-	
+
 	$('#country').focusout(function() {
 		$(this).myCondition();
 	});
-	
+
 	$('#social1').focusout(function() {
 		$(this).myCondition();
 	});
@@ -122,7 +122,7 @@ $( document ).ready(function() {
 	$('#currency').focusout(function() {
 		$(this).myCondition();
 	});
-	
+
 	$('#user').focusout(function() {
 		$(this).myCondition();
 	});
@@ -137,9 +137,9 @@ $( document ).ready(function() {
 			$('~ .okcross', $(this)).hide();
 		  }
 	});
-	
-	
-	
+
+
+
 	$('#pass').focusout(function() {
 		var pass = $('#result').val();
 		if($('#result').hasClass('strong')) {
@@ -193,10 +193,10 @@ $( document ).ready(function() {
 			$('#result').removeClass()
 			$('#result').addClass('strong')
 			return 'Strong'
-			
+
 		}
 	}
-	
+
 	$('#cpass').focusout(function() {
 		var passwordkey = $("#pass").val();
 		var retype_passwordkey = $("#cpass").val();
@@ -225,6 +225,6 @@ $( document ).ready(function() {
 		  }
 	});
 
-	
-	
+
+
 });

@@ -347,7 +347,7 @@ body {
 	font-size: 12px;
 	font-style: italic;
 	text-transform:uppercase;
-	width:85px;
+	width:95px;
 }
 .nav ul li a .navIcon {
 	height: 100%;
@@ -359,6 +359,7 @@ body {
 	background: #fee71b;
 	color: #3a2302;
 }
+
 /*icon NAv*/
 .sprite {
 	background:url(../images/navicons/nav-sprite.png) no-repeat;
@@ -421,6 +422,33 @@ body {
 .nav ul li a:hover > .navIcon .icon-go-to  {
 	background-position: -32px -241px ;
 }
+
+
+
+.nav ul li.active > a{
+	background: #fee71b;
+	color: #3a2302;
+}
+.nav ul .aHome.active > a .navIcon .icon-home {
+	background-position: -36px 0 ;
+}
+.nav ul .aMobile.active > a .navIcon .icon-mobile {
+	background-position: -27px -39px ;
+}
+.nav ul .aProducts.active > a .navIcon .icon-products {
+	background-position: -34px -79px;
+}
+.nav ul .aPromotion.active > a .navIcon .icon-promotion {
+	background-position: -31px -121px ;
+}
+.nav ul .aCommision.active > a .navIcon .icon-commision {
+	background-position: -35px -164px ;
+}
+.nav ul .aFaq.active > a .navIcon .icon-how-it-works  {
+	background-position: -35px -205px ;
+}
+
+
 /*********************************************
 	END
 **********************************************/

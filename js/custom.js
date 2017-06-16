@@ -5,7 +5,7 @@ $( document ).ready(function() {
 		$("#status").fadeOut("slow"); 
 		$("#loader").delay(100).fadeOut(); 
 		$("body").removeClass("stack"); 
-	}, 2000);
+	}, 100);
 	// TIME
 	var intervals = setInterval(function() {
         var momentNow = new Date().toLocaleString();
@@ -13,6 +13,41 @@ $( document ).ready(function() {
     }, 100);
 	
 	
+
+	function getPageName() {
+	    var index = window.location.href.lastIndexOf("/") + 1,
+	        filenameWithExtension = window.location.href.substr(index),
+	        filename = filenameWithExtension.split(".")[0];  
+	   //return filename;
+	    //alert(filename); 
+	    if(filename == 'index'){
+	    	$('.aHome').addClass('active');
+	    }
+	    if(filename == 'mobile'){
+	    	$('.aMobile').addClass('active');
+	    }
+	    if(filename == 'products'){
+	    	$('.aProducts').addClass('active');
+	    }
+	    if(filename == 'promotion'){
+	    	$('.aPromotion').addClass('active');
+	    }
+	    if(filename == 'commision'){
+	    	$('.aCommision').addClass('active');
+	    }
+	    if(filename == 'faq'){
+	    	$('.aFaq').addClass('active');
+	    }
+                     
+	}
+	getPageName();
+
+
+
+
+
+
+
 	//login dropdown at header
 	$(".login").on('click',function(e) {
 		//alert('sssss');
