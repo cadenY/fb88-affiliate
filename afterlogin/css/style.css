@@ -263,6 +263,7 @@ li.selected {
 	text-align: right;
 	padding: 4px;
 	color: #fff;
+	text-decoration: none;
 	font-size:12px;
 }
 #cirlceFlags ul #childFlag li a:hover {
