@@ -20,7 +20,7 @@ $( document ).ready(function() {
 	        filename = filenameWithExtension.split(".")[0];  
 	   //return filename;
 	    //alert(filename); 
-	    if(filename == 'index'){
+	    if(filename == 'index' || filename == ''){
 	    	$('.aHome').addClass('active');
 	    }
 	    if(filename == 'mobile'){
