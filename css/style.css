@@ -1011,7 +1011,7 @@ label {
 	color: #fee71b;
 	font-size:25px;
 	font-weight:bold;
-	font-style:italic;
+	text-transform: uppercase;
 	margin-bottom:20px;
 }
 ul.prodContent {

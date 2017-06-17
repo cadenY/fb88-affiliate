@@ -521,7 +521,6 @@ li.selected {
 	text-align: center;
 	color: #fff;
 	font-size: 12px;
-    font-style: italic;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -1510,7 +1509,9 @@ li.selected {
 	padding:5px;
 }
 
-
+.tblGridFlow.membertbl table tr td:first-child {
+	text-align: center;
+} 
 
 
 /*********************************************
