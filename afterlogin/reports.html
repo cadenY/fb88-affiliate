@@ -331,7 +331,7 @@
             $('#footer').load('footer.html');
 
             //DATEPICKER
-            $('.fromToCal').datetimepicker({
+            $('#month').datetimepicker({
               yearOffset:0,
               lang:'en',
               timepicker:false,
@@ -339,14 +339,7 @@
               formatDate:'Y/m/d',
             });
         });
-        function copyToClipboard(element) {
-         var $temp = $("<input>");
-         $("body").append($temp);
-         $temp.val($(element).text()).select();
-         document.execCommand("copy");
-         $temp.remove();
-       }
-
+       
     </script>
 </body>
 

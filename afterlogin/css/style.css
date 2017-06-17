@@ -48,7 +48,7 @@ body {
 	color: #145adf;
 	font-weight: bold;
 }
-.active {
+li.active {
 	background:#013c16;
 }
 /*********************************************
@@ -115,6 +115,53 @@ body {
 }
 .triforwidth {
 	width: 75%;
+}
+
+
+
+
+/*********************************************
+	MODAL
+**********************************************/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #1f1f1f;
+    margin: auto;
+    margin-top: 8%;
+    padding: 20px;
+    //border: 5px solid #ccc;
+    width: 40%;
+    color: #fff;
+}
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*********************************************
@@ -484,6 +531,9 @@ body {
 .subMenu ul li a .navIcon {
 	height: auto;
 	margin-top: 10px;
+}
+.subMenu ul li a .navTxt {
+	margin-top: 15px;
 }
 /*.subOverview, .subReports {
 	display: none;
@@ -1406,7 +1456,9 @@ body {
 /*********************************************
 	REPORT PART - PAGE
 **********************************************/
-
+.hiddenTbl {
+	display: none;
+}
 .tblGridFlow {
   margin-top: 20px;
   -webkit-transition: ease-in;
@@ -1436,6 +1488,9 @@ body {
   text-align: center;
   font-weight: bold;
 }
+.tblGridFlow table tr td a {
+	text-decoration: none;
+}
 .tblGridFlow table tr:nth-child(even) {background: #1f1f1f;}
 .tblGridFlow table tr:nth-child(odd) {background: #292929;}
 
@@ -1452,6 +1507,25 @@ body {
 	padding:5px;
 }
 
+
+
+
+/*********************************************
+	COMPANY WIN/LOSE MEMBER - PAGE
+**********************************************/
+.tblForModal table {
+	border-collapse: collapse;
+	border:3px solid #ccc;
+}
+.tblForModal table tr td, .tblForModal table tr th {
+	border:3px solid #ccc;
+	padding:10px;
+	text-align: center;
+	font-weight: bold;	
+}
+/*********************************************
+	END COMPANY WIN/LOSE MEMBER - PAGE
+**********************************************/
 /*********************************************
 	FOOTER PART
 **********************************************/
@@ -1786,31 +1860,107 @@ body {
 		height:20px;
 		margin-right:10px;
 	}
-  /*SUBMENU*/
-  .nav ul ul {
-  	display:block;
-  	width:100%;
-  	position:static;
-  	top:0px;
-  	left:0px;
-  	z-index:9999;
-  	background:#014823;
-  }
-  .nav ul ul li {
-  	//float:left;
-    display: block;
-    border:none;
-  }
-  .nav ul ul li a {
-    width: 100%;
-    padding-left: 40px;
-  }
+	/*SUBMENU*/
+	.nav ul .ul {
+		display:block;
+		width:100%;
+		position:static;
+		top:0px;
+		left:0px;
+		z-index:9999;
+		background:#014823;
+	}
+	.nav ul .ul.home {
+		width: 100%;
+	}
+	.nav ul .ul li {
+		//float:left;
+		display: block;
+		border:none;
+	}
+	.nav ul .ul li a {
+	width: 100%;
+	padding-left: 40px;
+	}
 
-  .nav ul li ul li a:hover {
-  	background: #fee71b  ;
-  	color: #3a2302;
+	.nav ul li .ul li a:hover {
+		background: #fee71b  ;
+		color: #3a2302;
 
-  }
+	}
+
+	
+
+
+	/*SUBMENU*/
+	.summary {
+		display: none;
+		//margin-left: -114px;
+		float: left;
+		height: 118px;
+	}
+	.summary img {
+		//display: inline-block;
+	}
+	.subMenu {
+		background: #013c16;
+		display: block;
+		margin:0px auto;  
+	    float:none;  
+	    position:static;  
+	    text-align:left;  
+	    z-index: 999;
+	    transition: all 0.5s ease 0s;
+	    overflow: auto;
+	}
+	.subMenu.subReports {
+		left:0px; /* Hides the drop down */  
+	}
+	.subMenu ul {
+		display: block !important;
+		float: none;
+		list-style: none;
+		margin:0;
+		padding: 0;
+	}
+	.subMenu ul li {
+		display: block;
+	}
+	.subMenu ul li a {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding-left: 40px;
+		//padding: 25px 0;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size:16px;
+	    font-style: normal;
+	    font-weight: bold;
+	    text-align: left;
+	    text-transform: uppercase;
+	}
+	.subMenu ul li a:hover {
+		background: #fee71b  ;
+		color: #3a2302;
+	}
+	.subMenu ul li a .navIcon {
+		height: auto;
+		margin-top: 0px;
+		vertical-align: middle;
+	}
+	.subMenu ul li a .navTxt {
+		margin-top: 0px;
+	}
+	.subMenu ul li a .navTxt br{
+		display: none;
+	}
+
+
+
+
+
 
 
 
@@ -1885,12 +2035,13 @@ body {
 
 
 	/*icon hover*/
-	.nav ul li a:hover > .navIcon .icon-home {
-		background-position: -102px 0 ;
-	}
 	.nav ul li a:hover > .navIcon .icon-mobile {
 		background-position: -96px -23px ;
 	}
+	/*.nav ul li a:hover > .navIcon .icon-home {
+		background-position: -102px 0 ;
+	}
+	
 	.nav ul li a:hover > .navIcon .icon-products {
 		background-position: -102px -48px; ;
 	}
@@ -1906,7 +2057,7 @@ body {
 	.nav ul li a:hover > .navIcon .icon-go-to  {
 		background-position: -101px -144px ;
 	}
-
+*/
   .nav ul li a:hover > .navIcon .icon-overview {
   	background-position: -100px -171px ;
   }

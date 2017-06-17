@@ -48,9 +48,29 @@ $('.pOverview').mouseover(function(){
  $('#submitTrack').on('click',function(){
    $('.tblCreativeGrid').show('slow');
  });
+ $('#companyMemberSearch').on('click',function(){
+   $('.hiddenTbl').show('slow');
+ });
 
 
 
+
+/* MODAL */
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function(e) {
+	e.preventDefault();
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}	
 
 
 
