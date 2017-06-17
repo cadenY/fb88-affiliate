@@ -7,27 +7,26 @@ $( document ).ready(function() {
 	//	$("body").removeClass("stack");
 	//}, 2000);
 	// TIME
-
 	function getPageName() {
 	    var index = window.location.href.lastIndexOf("/") + 1,
 	        filenameWithExtension = window.location.href.substr(index),
 	        filename = filenameWithExtension.split(".")[0];  
 	   //return filename;
 	    //alert(filename); 
-	    if(filename == 'index'){
-	    	$('.pHome').addClass('active');
+	    if(filename == 'index' || filename == ''){
+	    	$('.pHome').addClass('selected');
 	    }
-	    if(filename == 'monthly-overview'){
-	    	$('.pOverview').addClass('active');
+	    if(filename == 'monthly-overview' || filename == 'overall-commision'){
+	    	$('.pOverview').addClass('selected');
 	    }
 	    if(filename == 'creative'){
-	    	$('.pCreative').addClass('active');
+	    	$('.pCreative').addClass('selected');
 	    }
 	    if(filename == 'tracking'){
-	    	$('.pTracking').addClass('active');
+	    	$('.pTracking').addClass('selected');
 	    }
-	    if(filename == 'reports'){
-	    	$('.pReports').addClass('active');
+	    if(filename == 'reports' || filename == 'company' || filename == 'payment-reports' || filename == 'member-report' || filename == 'company-products' || filename == 'company-members'){
+	    	$('.pReports').addClass('selected');
 	    }                      
 	}
 	getPageName();
@@ -48,9 +47,7 @@ $('.pOverview').mouseover(function(){
  $('#submitTrack').on('click',function(){
    $('.tblCreativeGrid').show('slow');
  });
- $('#companyMemberSearch').on('click',function(){
-   $('.hiddenTbl').show('slow');
- });
+
 
 
 
@@ -59,13 +56,14 @@ $('.pOverview').mouseover(function(){
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
-btn.onclick = function(e) {
+$('#myBtn').on('click',function(e){
 	e.preventDefault();
     modal.style.display = "block";
-}
-span.onclick = function() {
+});
+$('.modalClose').on('click',function(e){
+	e.preventDefault();
     modal.style.display = "none";
-}
+});
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -100,7 +98,7 @@ window.onclick = function(event) {
 
 
 	//login dropdown at header
-	$(".login").on('click',function(e) {
+	/*$(".login").on('click',function(e) {
 		//alert('sssss');
 		e.preventDefault();
 	    e.stopPropagation();
@@ -111,7 +109,7 @@ window.onclick = function(event) {
 		else {
 			$(this).next(".loginBody:first").slideToggle('fast');
 		}
-	});
+	});*/
 	// DISMISSING LOGIN TOGGLE
 	$(document).on('click',function(e){
      if($('.loginBody').is(':visible')) {

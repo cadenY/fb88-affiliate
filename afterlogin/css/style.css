@@ -48,7 +48,7 @@ body {
 	color: #145adf;
 	font-weight: bold;
 }
-li.active {
+li.selected {
 	background:#013c16;
 }
 /*********************************************
@@ -150,15 +150,15 @@ li.active {
     color: #fff;
 }
 /* The Close Button */
-.close {
+.modalClose {
     color: #fff;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.modalClose:hover,
+.modalClose:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
@@ -286,6 +286,7 @@ li.active {
 	border: 1px solid #8a8a8a;
 	font-weight: bold;
 	display: inline-block;
+	z-index: 9999;
 	text-decoration: none;
 }
 .login img {
@@ -414,7 +415,8 @@ li.active {
 	font-weight: bold;
 	font-size: 12px;
 	text-transform:uppercase;
-	width:130px;
+	width:140px;
+	cursor: pointer;
 }
 .nav ul li a .navIcon {
 	height: 100%;
@@ -432,7 +434,7 @@ li.active {
 	display:none;
 	width:360px;
 	position:absolute;
-	top:84px;
+	top:82px;
 	left:0px;
 	z-index:9999;
 	background:#013c16;
@@ -666,11 +668,6 @@ li.active {
 .nav ul li a:hover > .navIcon .icon-products {
 	background-position: -34px -79px; ;
 }
-/*.nav ul li a:hover > .navIcon .icon-home {
-	background-position: -36px 0 ;
-}
-
-
 .nav ul li a:hover > .navIcon .icon-promotion {
 	background-position: -31px -121px ;
 }
@@ -680,6 +677,12 @@ li.active {
 .nav ul li a:hover > .navIcon .icon-how-it-works  {
 	background-position: -35px -205px ;
 }
+/*.nav ul li a:hover > .navIcon .icon-home {
+	background-position: -36px 0 ;
+}
+
+
+
 .nav ul li a:hover > .navIcon .icon-go-to  {
 	background-position: -32px -241px ;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Company Member Reports - Affiliate</title>
+    <title>Payment Reports - Affiliate</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/jquery.datetimepicker.css" type="text/css" />
 </head>
@@ -295,7 +295,7 @@
 
           <!-- Modal content -->
           <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="modalClose">&times;</span>
             <p>
                 <h3>Expenses</h3>
                 <div class="tblForModal">
