@@ -5,7 +5,7 @@ $( document ).ready(function() {
 		$("#status").fadeOut("slow"); 
 		$("#loader").delay(100).fadeOut(); 
 		$("body").removeClass("stack"); 
-	}, 100);
+	}, 5000);
 	// TIME
 	var intervals = setInterval(function() {
         var momentNow = new Date().toLocaleString();

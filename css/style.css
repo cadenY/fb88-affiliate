@@ -49,8 +49,8 @@ body {
  }
 
 #status  {
-     width: 128px;
-     height: 128px;
+     width: 250px;
+     height: 250px;
      position: absolute;
      left: 50%;
      top: 50%;
