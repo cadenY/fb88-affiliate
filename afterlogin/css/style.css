@@ -36,6 +36,9 @@ body {
 	color: #145adf;
 	font-weight: bold;
 }
+.orange {
+	color: #F30;
+}
 li.selected {
 	background:#013c16;
 }
@@ -210,7 +213,7 @@ li.selected {
 	z-index: 111;
 	font-size: 12px;
 	font-weight: bold;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 }
 .marquee{
 	display: inline-block;
@@ -218,7 +221,7 @@ li.selected {
 	z-index: 1;
 	background: #04712a;
 	font-size: 11px;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 	margin-left: 10px;
 	width: 54%;
 	position: relative;
@@ -277,6 +280,7 @@ li.selected {
 	display: inline-block;
 	z-index: 9999;
 	text-decoration: none;
+	font-family: Arial;
 }
 .login img {
 	vertical-align:middle;
@@ -290,7 +294,7 @@ li.selected {
 	display:none;
 	margin:0;
 	background: url(../images/loginBg.png) repeat;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 	font-size:11px;
 	border:1px solid #fff;
 	padding: 10px;
@@ -334,9 +338,10 @@ li.selected {
 	border: none;
 	margin-top: 10px;
 	font-weight: bold;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 }
 .joinNow {
+	font-family: Arial;
 	height: 30px;
 	line-height: 30px;
 	width: 128px;
@@ -404,6 +409,7 @@ li.selected {
 	font-weight: bold;
 	font-size: 12px;
 	text-transform:uppercase;
+	font-family: Arial;
 	width:140px;
 	cursor: pointer;
 }
@@ -511,6 +517,7 @@ li.selected {
 	color: #fff;
 	font-size: 12px;
     font-weight: bold;
+    font-family: Arial;
     text-align: center;
     text-transform: uppercase;
 }
@@ -1535,11 +1542,19 @@ li.selected {
 .searchMonth table tr td  input[type=text] {
 	padding:5px;
 }
+.searchMonth table tr td select {
+	padding: 5px;
+	font-size: 12px;
+}
 
 .tblGridFlow.membertbl table tr td:first-child {
 	text-align: center;
 } 
-
+.tblGridFlow table tr.gt td {
+	 padding: 25px 10px;
+	 font-size: 16px;
+	 font-weight: bolder;
+}
 
 /*********************************************
 	COMPANY WIN/LOSE MEMBER - PAGE
@@ -1547,6 +1562,12 @@ li.selected {
 .tblForModal table {
 	border-collapse: collapse;
 	border:3px solid #ccc;
+}
+.tblForModal table tr th {
+  background: #028843;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 15px;
 }
 .tblForModal table tr td, .tblForModal table tr th {
 	border:3px solid #ccc;

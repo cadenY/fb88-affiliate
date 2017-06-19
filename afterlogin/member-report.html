@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Member Reports - Affiliate</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/jquery.datetimepicker.css" type="text/css" />
+    
 </head>
 <body>
   <!--<div id="loader">
@@ -54,7 +54,21 @@
                       <tr>
                         <td width="50">Month</td>
                         <td>
-                          <input type="text" id="month" name="month">
+                          <select id='month'>
+                            <option value=''>--Select Month--</option>
+                            <option value='1'>Janaury</option>
+                            <option value='2'>February</option>
+                            <option value='3'>March</option>
+                            <option value='4'>April</option>
+                            <option value='5'>May</option>
+                            <option value='6'>June</option>
+                            <option value='7'>July</option>
+                            <option value='8'>August</option>
+                            <option value='9'>September</option>
+                            <option value='10'>October</option>
+                            <option value='11'>November</option>
+                            <option value='12'>December</option>
+                          </select> 
                         </td>
                       </tr>
                         <tr>
@@ -138,7 +152,7 @@
                           <td class="red">-292.00 (-1,602.00)</td>
                           <td class="red">-392.00 (-1,602.00)</td>
                         </tr>
-                        <tr>
+                        <tr class="gt">
                           <td>GRAND TOTAL</td>
                           <td>USD</td>
                           <td>13,700.00</td>
@@ -178,21 +192,13 @@
     <!--  end of wrapper -->
 
     <script type="text/javascript" src="js/jQuery.js"></script>
-    <script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
+
     <script>
         $(function() {
             // header
             $('#header').load('header.html');
             $('#footer').load('footer.html');
 
-            //DATEPICKER
-            $('#month').datetimepicker({
-              yearOffset:0,
-              lang:'en',
-              timepicker:false,
-              format:'d/m/Y',
-              formatDate:'Y/m/d',
-            });
         });
        
     </script>
