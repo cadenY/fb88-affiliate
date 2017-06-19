@@ -1,15 +1,3 @@
-@font-face {
-  font-family: 'AvertaDemo-ExtraBoldItalic';
-  src: url('../fonts/AvertaDemo-ExtraBoldItalic.eot');
-  src: url('../fonts/AvertaDemo-ExtraBoldItalic.woff2') format('woff2'),
-       url('../fonts/AvertaDemo-ExtraBoldItalic.woff') format('woff'),
-       url('../fonts/AvertaDemo-ExtraBoldItalic.ttf') format('truetype'),
-       url('../fonts/AvertaDemo-ExtraBoldItalic.svg#AvertaDemo-ExtraBoldItalic') format('svg'),
-       url('../fonts/AvertaDemo-ExtraBoldItalic.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
 	box-sizing: border-box;
   height: 100%;
@@ -21,7 +9,7 @@ html {
 body {
 	margin:0;
 	padding: 0;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	font-size: 12px;
   background: #028843;
   position: relative;
@@ -155,7 +143,7 @@ body {
 	z-index: 111;
 	font-size: 12px;
 	font-weight: bold;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 }
 .marquee{
 	display: inline-block;
@@ -163,7 +151,7 @@ body {
 	z-index: 1;
 	background: #04712a;
 	font-size: 11px;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	margin-left: 10px;
 	width: 54%;
 	position: relative;
@@ -234,7 +222,7 @@ body {
 	display:none;
 	margin:0;
 	background: url(../images/loginBg.png) repeat;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	font-size:11px;
 	border:1px solid #fff;
 	padding: 10px;
@@ -278,7 +266,7 @@ body {
 	border: none;
 	margin-top: 10px;
 	font-weight: bold;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 }
 .joinNow {
 	height: 30px;
@@ -866,7 +854,7 @@ label {
 	display:inline-block;
 }
 .tooltips {
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	display:none;
 	position:absolute;
 	margin-left: 50px;
@@ -1207,7 +1195,7 @@ body.page-promotion {
   font-size: 13px;
   font-weight: bold;
   border-radius: 4px;
-  font-family: Arial;
+  font-family: Verdana,Arial,Tahoma;
 }
 /*********************************************
 	COMMISSION PAGE
@@ -1548,7 +1536,7 @@ body.faq {
 **********************************************/
 .footer {
 	background: #028843;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	font-size: 11px;
 	padding:10px 5% 30px 5%;
 }
@@ -2006,7 +1994,7 @@ body.faq {
 		left:10%;
 	}
 	.tooltips {
-		font-family: Arial;
+		font-family: Verdana,Arial,Tahoma;
 		display:none;
 		position:absolute;
 		margin-left: 47%;

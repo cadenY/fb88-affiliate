@@ -9,7 +9,7 @@ html {
 body {
 	margin:0;
 	padding: 0;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	font-size: 12px;
   background: #028843;
   position: relative;
@@ -210,7 +210,7 @@ li.selected {
 	z-index: 111;
 	font-size: 12px;
 	font-weight: bold;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 }
 .marquee{
 	display: inline-block;
@@ -218,7 +218,7 @@ li.selected {
 	z-index: 1;
 	background: #04712a;
 	font-size: 11px;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	margin-left: 10px;
 	width: 54%;
 	position: relative;
@@ -290,7 +290,7 @@ li.selected {
 	display:none;
 	margin:0;
 	background: url(../images/loginBg.png) repeat;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	font-size:11px;
 	border:1px solid #fff;
 	padding: 10px;
@@ -334,7 +334,7 @@ li.selected {
 	border: none;
 	margin-top: 10px;
 	font-weight: bold;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 }
 .joinNow {
 	height: 30px;
@@ -750,7 +750,7 @@ li.selected {
 	display:inline-block;
 }
 .tooltips {
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	display:none;
 	position:absolute;
 	margin-left: 20px;
@@ -1115,7 +1115,7 @@ li.selected {
   font-size: 13px;
   font-weight: bold;
   border-radius: 4px;
-  font-family: Arial;
+  font-family: Verdana,Arial,Tahoma;
 }
 /*********************************************
 	END FORGOT PAGE
@@ -1438,7 +1438,7 @@ li.selected {
   text-align: center;
 }
 .btnGreen {
-  font-family: Arial;
+  font-family: Verdana,Arial,Tahoma;
   font-size: 12px;
   background: #028843;
   margin-right: 10px;
@@ -1562,7 +1562,7 @@ li.selected {
 **********************************************/
 .footer {
 	background: #028843;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	font-size: 11px;
 	padding:10px 5% 30px 5%;
 }
