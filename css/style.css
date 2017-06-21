@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'AvertaDemo-ExtraBoldItalic';
+  src: url('../fonts/AvertaDemo-ExtraBoldItalic.eot');
+  src: url('../fonts/AvertaDemo-ExtraBoldItalic.woff2') format('woff2'),
+       url('../fonts/AvertaDemo-ExtraBoldItalic.woff') format('woff'),
+       url('../fonts/AvertaDemo-ExtraBoldItalic.ttf') format('truetype'),
+       url('../fonts/AvertaDemo-ExtraBoldItalic.svg#AvertaDemo-ExtraBoldItalic') format('svg'),
+       url('../fonts/AvertaDemo-ExtraBoldItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 html {
 	box-sizing: border-box;
   height: 100%;
@@ -141,7 +152,7 @@ body {
 	display: inline-block;
 	color: #fff;
 	z-index: 111;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: bold;
 	font-family: Verdana,Arial,Tahoma;
 }

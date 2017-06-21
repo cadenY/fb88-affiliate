@@ -60,8 +60,8 @@ li.selected {
  }
 
 #status  {
-     width: 128px;
-     height: 128px;
+     width: 250px;
+     height: 250px;
      position: absolute;
      left: 50%;
      top: 50%;
@@ -211,9 +211,9 @@ li.selected {
 	display: inline-block;
 	color: #fff;
 	z-index: 111;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: bold;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 }
 .marquee{
 	display: inline-block;
@@ -221,7 +221,7 @@ li.selected {
 	z-index: 1;
 	background: #04712a;
 	font-size: 11px;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	margin-left: 10px;
 	width: 54%;
 	position: relative;
@@ -280,7 +280,7 @@ li.selected {
 	display: inline-block;
 	z-index: 9999;
 	text-decoration: none;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 }
 .login img {
 	vertical-align:middle;
@@ -294,7 +294,7 @@ li.selected {
 	display:none;
 	margin:0;
 	background: url(../images/loginBg.png) repeat;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	font-size:11px;
 	border:1px solid #fff;
 	padding: 10px;
@@ -338,10 +338,10 @@ li.selected {
 	border: none;
 	margin-top: 10px;
 	font-weight: bold;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 }
 .joinNow {
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	height: 30px;
 	line-height: 30px;
 	width: 128px;
@@ -407,9 +407,9 @@ li.selected {
 	/*width: 90px;*/
 	padding: 15px 0;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 10px;
 	text-transform:uppercase;
-	font-family: Arial;
+	font-family: Verdana,Arial,Tahoma;
 	width:140px;
 	cursor: pointer;
 }
@@ -515,9 +515,9 @@ li.selected {
 	text-decoration: none;
 	text-align: center;
 	color: #fff;
-	font-size: 12px;
+	font-size: 10px;
     font-weight: bold;
-    font-family: Arial;
+    font-family: Verdana,Arial,Tahoma;
     text-align: center;
     text-transform: uppercase;
 }

@@ -1,11 +1,11 @@
 $( document ).ready(function() {
    // alert( "ready!" );
    //PRELOAD
-	//setTimeout(function(){
-	//	$("#status").fadeOut("slow");
-	//	$("#loader").delay(100).fadeOut();
-	//	$("body").removeClass("stack");
-	//}, 2000);
+	setTimeout(function(){
+		$("#status").fadeOut("slow");
+		$("#loader").delay(100).fadeOut();
+		$("body").removeClass("stack");
+	}, 1500);
 	// TIME
 	function getPageName() {
 	    var index = window.location.href.lastIndexOf("/") + 1,
