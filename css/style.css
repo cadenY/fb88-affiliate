@@ -1003,8 +1003,9 @@ label {
 }
 .prodBox {
 	color:#fff;
-	float:left;
-	width: 50%;
+	//float:left;
+	display: inline-block;
+	width: 49.5%;
 	margin: 20px 0;
 }
 .prodTitle {
