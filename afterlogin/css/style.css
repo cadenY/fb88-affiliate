@@ -429,11 +429,23 @@ li.selected {
 	display:none;
 	width:360px;
 	position:absolute;
-	top:82px;
+	top:79px;
 	left:0px;
 	z-index:9999;
 	background:#013c16;
 }
+@-moz-document url-prefix() { 
+	.nav ul .ul {
+		display:none;
+		width:360px;
+		position:absolute;
+		top:82px;
+		left:0px;
+		z-index:9999;
+		background:#013c16;
+	}
+}
+
 .nav ul .ul li {
 	//float:left;
   display: inline-block;
