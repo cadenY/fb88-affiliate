@@ -1,5 +1,57 @@
 $( document ).ready(function() {
-   // alert( "ready!" );
+    //alert( "ready!" );
+
+    /*var d = new Date();
+	var month = d.getMonth()+1;
+	var day = d.getDate();
+
+	var output = 
+	((''+day).length<2 ? '0' : '') + day + '/' +
+	((''+month).length<2 ? '0' : '') + month + '/' +
+	d.getFullYear();
+	$('#month option').each(function() {
+    	$('#month option').val() + d.getFullYear();
+  	});*/
+  	
+	$('.trackName').on('click', function(){
+		//alert(Math.random().toString(36).substr(2, 5));
+		var track = $('#trackName').val().length; 
+		if(track == '1') {
+			var Rand = Math.random().toString(36).substr(2, 7);
+		}
+		else if(track == '2') {
+			var Rand = Math.random().toString(36).substr(2, 6);
+		}
+		else if(track == '3') {
+			var Rand = Math.random().toString(36).substr(2, 5);
+		}
+		else if(track == '4') {
+			var Rand = Math.random().toString(36).substr(2, 4);
+		}
+		else if(track == '5') {
+			var Rand = Math.random().toString(36).substr(2, 3);
+		}
+		else if(track == '6') {
+			var Rand = Math.random().toString(36).substr(2, 2);
+		}
+		else if(track == '7') {
+			var Rand = Math.random().toString(36).substr(2, 1);
+		}
+		else if(track == '8') {
+			var Rand = '';
+		}
+		else {
+			var Rand = Math.random().toString(36).substr(2, 8);
+		}
+		$('#trackName').val($('#trackName').val()+Rand);
+		$('.tid').html($('#trackName').val());
+	});
+     $('#trackName').keyup(function(){
+     	var tracks = $('#trackName').val();
+     	$('.tid').html(tracks);
+    });
+
+  	//Math.random().toString(36).substr(2, 5)
    //PRELOAD
 	setTimeout(function(){
 		$("#status").fadeOut("slow");

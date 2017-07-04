@@ -50,28 +50,54 @@
                         <form action="" post="">
                           <table>
                             <tr>
-                              <td>Language</td>
-                              <td><input type="text"name="lang" /></td>
+                              <td width="21%">Language</td>
+                              <td>
+                                  <select name="lang" id="lang">
+                                    <option value=""> Select Language </option>
+                                    <option value="">English </option>
+                                    <option value="">Tiếng Việt</option>
+                                    <option value="">简体中文</option>
+                                  </select>
+                              </td>
                               <td></td>
                             </tr>
                             <tr>
                               <td>Type</td>
-                              <td><input type="text"name="type" /></td>
+                              <td>
+                                <select name="type" id="type">
+                                  <option value=""> Select Type </option>
+                                  <option value="">All </option>
+                                </select>
+                              </td>
                               <td></td>
                             </tr>
                             <tr>
                               <td>Width X Height</td>
-                              <td><input type="text"name="wh" /></td>
+                              <td>
+                                <select name="wh" id="wh">
+                                  <option value=""> Select Type </option>
+                                  <option value=""> 300x250 </option>
+                                  <option value=""> 240x200 </option>
+                                </select>
+                              </td>
                               <td></td>
                             </tr>
                             <tr>
                               <td>Group</td>
-                              <td><input type="text"name="group" /></td>
+                              <td>
+                                <select name="group" id="group">
+                                  <option value=""> Select Group </option>
+                                  <option value=""> General Promotions </option>
+                                  <option value=""> Local Promotion </option>
+                                  <option value=""> Special Promotion </option>
+                                  <option value=""> ALL </option>
+                                </select>
+                              </td>
                               <td></td>
                             </tr>
                             <tr>
                               <td>Tracking Name</td>
-                              <td><input type="text"name="trackName" /></td>
+                              <td><input type="text" name="trackName" id="trackName" maxlength="8" /></td>
                               <td><div class="trackName">Add New Tracking Name</div></td>
                             </tr>
                             <tr>
@@ -99,7 +125,9 @@
                       <div class="anchors">
                         <div class="anchorsDiv">
 
-                        <a href="https://affiliate.fb88.com/Track.aspx?affiliateid=1688&tid=1688&cid=188" target="_blank" id="copy1">https://affiliate.fb88.com/Track.aspx?affiliateid=1688&tid=1688&cid=188</a>
+                        <a href="https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=EN" target="_blank" id="copy1">
+                        https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=EN<span class="tidShow">&tid=<span class="tid">5566</span></span>
+                        </a>
                         </div>
                         <div class="anchorBtns">
                           <a href="#" class="btnGreen">PREV</a>
@@ -151,6 +179,8 @@
          document.execCommand("copy");
          $temp.remove();
        }
+
+
 
     </script>
 </body>

@@ -53,12 +53,22 @@
             <p>
               Your Last Login on: <span class="yellow">01 June 2017  11:00:12</span>
             </p>
-            <p>
-              Your Affiliate Link: <a href="http://affiliate.fb88.com/Track.aspx?affiliateId=168888" target="_blank">http://affiliate.fb88.com/Track.aspx?affiliateId=168888</a>
-            </p>
-            <p>
-              Your Mobile Link: <a href="http://affiliate.fb88.com/Track.aspx?affiliateId=168888" target="_blank">http://affiliate.fb88.com/Track.aspx?affiliateId=168888</a>
-            </p>
+            <div class="clearfix">
+              <div class="affDivLink1">Your Affiliate Link: <a href="http://affiliate.fb88.com/Track.aspx?affiliateId=168888" target="_blank" class="affLink" id="affLink">http://affiliate.fb88.com/Track.aspx?affiliateId=168888</a>
+              </div>
+              <div class="affDivLink2">
+                <button class="btnGreen" onclick="copyToClipboard('#affLink')">COPY LINK</button>
+                <button class="btnGreen">SHORTEN LINK</button>
+              </div>
+            </div>
+            <div class="clearfix">
+              <div class="affDivLink1">Your Mobile Link: <a href="http://m.fb88.com/Track.aspx?affiliateId=168888" target="_blank" class="mobLink" id="mobLink">http://m.fb88.com/Track.aspx?affiliateId=168888</a>
+              </div>
+              <div class="affDivLink2">
+                <button class="btnGreen" onclick="copyToClipboard('#mobLink')">COPY LINK</button>
+                <button class="btnGreen">SHORTEN LINK</button>
+              </div>
+            </div>
             <P>
               Please go to <a href="creative.html" target="_blank">Creative</a> to select appropriate marketing banners. Just Copy & Paste the URL Code into your existing webpage and the banner(s) is/are shown on you side.
             </P>
@@ -205,8 +215,17 @@
             $('#header').load('header.html');
             $('#footer').load('footer.html');
 
+
+         
           
         });
+        function copyToClipboard(element) {
+         var $temp = $("<input>");
+         $("body").append($temp);
+         $temp.val($(element).text()).select();
+         document.execCommand("copy");
+         $temp.remove();
+       }
     </script>
 </body>
 

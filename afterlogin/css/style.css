@@ -453,6 +453,8 @@ li.selected {
 }
 .nav ul .ul li a {
   width: 180px;
+  display: block;
+  padding: 35px 0;
 }
 .nav ul li:hover > ul {
 	display:block;
@@ -1278,7 +1280,11 @@ li.selected {
   color: #028843;
   font-weight: bold;
 }
-
+.affLink, .mobLink {
+	text-decoration: none;
+	color: #028843;
+	font-weight: bold;
+}
 .overBox {
   float: left;
 }
@@ -1313,6 +1319,13 @@ li.selected {
 .overallComTables table tr:hover > td {
   background: #22a763;
   cursor: pointer;
+}
+
+.affDivLink1 {
+	float: left;
+}
+.affDivLink2 {
+	float: right;
 }
 
 /*********************************************
@@ -1396,7 +1409,14 @@ li.selected {
 .creativeContent {
   padding:50px;
 }
-
+.preview {
+	display: none;
+	-webkit-transition: ease-in;
+	-moz-transition: ease-in;
+	-ms-transition: ease-in;
+	-o-transition: ease-in;
+	transition: ease-in;
+}
 .tblCreative table tr td {
   padding-bottom: 5px;
 }
@@ -1419,6 +1439,7 @@ li.selected {
   width: 100%;
   text-align: center;
   padding: 5px 10px;
+  cursor: pointer;
 }
 .crativeSubmit {
   background: #028843;
@@ -1446,7 +1467,7 @@ li.selected {
   background: #131313;
   color: #fff;
   padding:30px 30px 20px 30px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .anchors a {
   text-decoration: none;
@@ -1514,10 +1535,12 @@ li.selected {
         -ms-transition: ease-in;
          -o-transition: ease-in;
             transition: ease-in;
+            overflow: auto;
 }
 .tblGridFlow table {
   border-collapse: collapse;
   border: 1px solid #fff;
+  min-width: 1000px;
 }
 .tblGridFlow table tr th {
   background: #028843;
@@ -1785,6 +1808,7 @@ li.selected {
 	}
 	.contHomeDiv {
 	}
+	
 
 }
 @media screen and (max-width : 1200px){
@@ -1830,6 +1854,7 @@ li.selected {
   .tblCreativeGrid table {
   	min-width: 900px;
   }
+
 
 }
 @media screen and (max-width: 992px) {
