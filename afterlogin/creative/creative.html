@@ -47,100 +47,70 @@
                   <div class="creativeTitle">Creative</div>
                   <div class="creativeContent">
                       <div class="tblCreative">
-                        <div class="notif"></div>
                         <form action="" post="">
-                          <table id="tblFormCreative">
+                          <table>
                             <tr>
-                              <td width="21%">Language</td>
-                              <td>
-                                  <select name="lang" id="lang">
-                                    <option value=""> Select Language </option>
-                                    <option value="en">English </option>
-                                    <option value="vi">Tiếng Việt</option>
-                                    <option value="cn">简体中文</option>
-                                  </select>
-                              </td>
+                              <td>Language</td>
+                              <td><input type="text"name="lang" /></td>
                               <td></td>
                             </tr>
                             <tr>
-                              <td>Group</td>
-                              <td>
-                                <select name="group" id="group">
-                                  <option value=""> Select Group </option>
-                                  <option value="1">General</option>
-                                  <option value="2">Signup</option>
-                                </select>
-                              </td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Promotion</td>
-                              <td>
-                                <select name="promotion" id="promotion">
-                                  <option value=""> Select Promo </option>
-                                  <option value="1">150 Welcome Bonus</option>
-                                  <option value="2">Weekly Cash Rebates</option>
-                                  <option value="3">Reload Bonus</option>
-                                </select>
-                              </td>
+                              <td>Type</td>
+                              <td><input type="text"name="type" /></td>
                               <td></td>
                             </tr>
                             <tr>
                               <td>Width X Height</td>
-                              <td>
-                                <select name="wh" id="wh">
-                                  <option value=""> Select Type </option>
-                                  <option value="1">100x250</option>
-                                  <option value="2">200x200</option>
-                                  <option value="3">300x250</option>
-                                  <option value="4">400x200</option>
-                                  <option value="5">500x200</option>
-                                </select>
-                              </td>
+                              <td><input type="text"name="wh" /></td>
                               <td></td>
                             </tr>
-                            
+                            <tr>
+                              <td>Group</td>
+                              <td><input type="text"name="group" /></td>
+                              <td></td>
+                            </tr>
                             <tr>
                               <td>Tracking Name</td>
-                              <td><input type="text" name="trackName" id="trackName" maxlength="8" /></td>
+                              <td><input type="text"name="trackName" /></td>
                               <td><div class="trackName">Add New Tracking Name</div></td>
                             </tr>
                             <tr>
                               <td></td>
-                              <td><input type="button" name="crativeSubmit" value="GENERATE" class="crativeSubmit" id="crativeSubmit"/></td>
+                              <td><input type="button"name="crativeSubmit" value="GENERATE" class="crativeSubmit" /></td>
                               <td></td>
                             </tr>
 
                           </table>
                         </form>
                       </div><!-- tblCreative -->
-
-
                       <div class="preview">
                         <h3>Preview</h3>
                         <div class="prevCont">
+                          <a href="#">Previous Page</a> Page 1of2 <a href="#">Next Page</a>
                           <div class="prevImg">
-                            <a href="#" target="_blank" class="anchorImg"><img src="images/creative/fb88logo.jpg" /></a>
+                            <img src="images/creative/fb88logo.jpg" />
                           </div>
-                          
+                          <div class="txtOnImg">
+                            Width:360px | Height:60px
+                          </div>
                         </div>
                       </div><!-- preview -->
 
                       <div class="anchors">
                         <div class="anchorsDiv">
 
-                        <a href="#" target="_blank" id="copy1">
-                        </a>
+                        <a href="https://affiliate.fb88.com/Track.aspx?affiliateid=1688&tid=1688&cid=188" target="_blank" id="copy1">https://affiliate.fb88.com/Track.aspx?affiliateid=1688&tid=1688&cid=188</a>
                         </div>
                         <div class="anchorBtns">
+                          <a href="#" class="btnGreen">PREV</a>
                           <button class="btnGreen" onclick="copyToClipboard('#copy1')">COPY LINK</button>
                           <button class="btnGreen">SHORTEN LINK</button>
+                          <a href="#" class="btnGreen">NEXT</a>
                         </div>
                       </div>
 
                   </div><!-- creativeContent -->
                 </div><!-- creativeBox -->
-
 
 
 

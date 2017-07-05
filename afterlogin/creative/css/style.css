@@ -9,7 +9,7 @@ html {
 body {
 	margin:0;
 	padding: 0;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 	font-size: 12px;
   background: #028843;
   position: relative;
@@ -36,9 +36,6 @@ body {
 	color: #145adf;
 	font-weight: bold;
 }
-.orange {
-	color: #F30;
-}
 li.selected {
 	background:#013c16;
 }
@@ -60,8 +57,8 @@ li.selected {
  }
 
 #status  {
-     width: 250px;
-     height: 250px;
+     width: 128px;
+     height: 128px;
      position: absolute;
      left: 50%;
      top: 50%;
@@ -211,9 +208,9 @@ li.selected {
 	display: inline-block;
 	color: #fff;
 	z-index: 111;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: bold;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 }
 .marquee{
 	display: inline-block;
@@ -221,7 +218,7 @@ li.selected {
 	z-index: 1;
 	background: #04712a;
 	font-size: 11px;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 	margin-left: 10px;
 	width: 54%;
 	position: relative;
@@ -280,7 +277,6 @@ li.selected {
 	display: inline-block;
 	z-index: 9999;
 	text-decoration: none;
-	font-family: Verdana,Arial,Tahoma;
 }
 .login img {
 	vertical-align:middle;
@@ -294,7 +290,7 @@ li.selected {
 	display:none;
 	margin:0;
 	background: url(../images/loginBg.png) repeat;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 	font-size:11px;
 	border:1px solid #fff;
 	padding: 10px;
@@ -338,10 +334,9 @@ li.selected {
 	border: none;
 	margin-top: 10px;
 	font-weight: bold;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 }
 .joinNow {
-	font-family: Verdana,Arial,Tahoma;
 	height: 30px;
 	line-height: 30px;
 	width: 128px;
@@ -407,9 +402,8 @@ li.selected {
 	/*width: 90px;*/
 	padding: 15px 0;
 	font-weight: bold;
-	font-size: 10px;
+	font-size: 12px;
 	text-transform:uppercase;
-	font-family: Verdana,Arial,Tahoma;
 	width:140px;
 	cursor: pointer;
 }
@@ -429,21 +423,10 @@ li.selected {
 	display:none;
 	width:360px;
 	position:absolute;
-	top:79px;
+	top:82px;
 	left:0px;
 	z-index:9999;
 	background:#013c16;
-}
-@-moz-document url-prefix() { 
-	.nav ul .ul {
-		display:none;
-		width:360px;
-		position:absolute;
-		top:82px;
-		left:0px;
-		z-index:9999;
-		background:#013c16;
-	}
 }
 .nav ul .ul li {
 	//float:left;
@@ -452,8 +435,6 @@ li.selected {
 }
 .nav ul .ul li a {
   width: 180px;
-  display: block;
-  padding: 35px 0;
 }
 .nav ul li:hover > ul {
 	display:block;
@@ -528,9 +509,8 @@ li.selected {
 	text-decoration: none;
 	text-align: center;
 	color: #fff;
-	font-size: 10px;
+	font-size: 12px;
     font-weight: bold;
-    font-family: Verdana,Arial,Tahoma;
     text-align: center;
     text-transform: uppercase;
 }
@@ -770,7 +750,7 @@ li.selected {
 	display:inline-block;
 }
 .tooltips {
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 	display:none;
 	position:absolute;
 	margin-left: 20px;
@@ -1135,7 +1115,7 @@ li.selected {
   font-size: 13px;
   font-weight: bold;
   border-radius: 4px;
-  font-family: Verdana,Arial,Tahoma;
+  font-family: Arial;
 }
 /*********************************************
 	END FORGOT PAGE
@@ -1279,11 +1259,7 @@ li.selected {
   color: #028843;
   font-weight: bold;
 }
-.affLink, .mobLink {
-	text-decoration: none;
-	color: #028843;
-	font-weight: bold;
-}
+
 .overBox {
   float: left;
 }
@@ -1320,12 +1296,6 @@ li.selected {
   cursor: pointer;
 }
 
-.affDivLink1 {
-	float: left;
-}
-.affDivLink2 {
-	float: right;
-}
 /*********************************************
 	END OF OVERALL COMMISSION PAGE
 **********************************************/
@@ -1408,15 +1378,6 @@ li.selected {
   padding:50px;
 }
 
-
-.preview {
-	display: none;
-	-webkit-transition: ease-in;
-	-moz-transition: ease-in;
-	-ms-transition: ease-in;
-	-o-transition: ease-in;
-	transition: ease-in;
-}
 .tblCreative table tr td {
   padding-bottom: 5px;
 }
@@ -1434,7 +1395,6 @@ li.selected {
   font-size: 12px;
 }
 .trackName {
-  cursor: pointer;
   background: #028843;
   font-size: 12px;
   width: 100%;
@@ -1462,28 +1422,23 @@ li.selected {
   font-weight: bold;
 }
 
-.anchorImg {
-}
+
 .anchors {
   background: #131313;
   color: #fff;
   padding:30px 30px 20px 30px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .anchors a {
   text-decoration: none;
   color: #fff;
-  margin-top: 50px;
 }
 .anchorBtns {
   margin-top: 50px;
   text-align: center;
 }
-.tidShow {
-	//display: none;
-}
 .btnGreen {
-  font-family: Verdana,Arial,Tahoma;
+  font-family: Arial;
   font-size: 12px;
   background: #028843;
   margin-right: 10px;
@@ -1498,16 +1453,7 @@ li.selected {
   border:none;
 }
 
-.notif {
-	background: #fff;
-	padding: 10px;
-	font-size: 12px;
-	border:1px solid #ccc;
-	color: red;
-	display: none;
-	border-radius: 8px;
-	margin-bottom: 15px;
-}
+
 .tblCreativeGrid {
   margin-top: 20px;
   display: none;
@@ -1535,6 +1481,7 @@ li.selected {
 .tblCreativeGrid table tr:nth-child(even) {background: #1f1f1f;}
 .tblCreativeGrid table tr:nth-child(odd) {background: #292929;}
 
+
 /*********************************************
 	REPORT PART - PAGE
 **********************************************/
@@ -1542,7 +1489,6 @@ li.selected {
 	display: none;
 }
 .tblGridFlow {
-	overflow: auto;
   margin-top: 20px;
   -webkit-transition: ease-in;
        -moz-transition: ease-in;
@@ -1553,7 +1499,6 @@ li.selected {
 .tblGridFlow table {
   border-collapse: collapse;
   border: 1px solid #fff;
-  min-width: 1000px;
 }
 .tblGridFlow table tr th {
   background: #028843;
@@ -1590,19 +1535,11 @@ li.selected {
 .searchMonth table tr td  input[type=text] {
 	padding:5px;
 }
-.searchMonth table tr td select {
-	padding: 5px;
-	font-size: 12px;
-}
 
 .tblGridFlow.membertbl table tr td:first-child {
 	text-align: center;
 } 
-.tblGridFlow table tr.gt td {
-	 padding: 25px 10px;
-	 font-size: 16px;
-	 font-weight: bolder;
-}
+
 
 /*********************************************
 	COMPANY WIN/LOSE MEMBER - PAGE
@@ -1610,12 +1547,6 @@ li.selected {
 .tblForModal table {
 	border-collapse: collapse;
 	border:3px solid #ccc;
-}
-.tblForModal table tr th {
-  background: #028843;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 15px;
 }
 .tblForModal table tr td, .tblForModal table tr th {
 	border:3px solid #ccc;
@@ -1631,7 +1562,7 @@ li.selected {
 **********************************************/
 .footer {
 	background: #028843;
-	font-family: Verdana,Arial,Tahoma;
+	font-family: Arial;
 	font-size: 11px;
 	padding:10px 5% 30px 5%;
 }

@@ -1,85 +1,11 @@
 $( document ).ready(function() {
    // alert( "ready!" );
-
-
-
-
-   // GETTING RANDOM ALPHANUMERIC TRACKING CODE
-   $('.trackName').on('click', function(){
-		//alert(Math.random().toString(36).substr(2, 5));
-		var track = $('#trackName').val().length; 
-		if(track == '1') {
-			var Rand = Math.random().toString(36).substr(2, 7);
-		}
-		else if(track == '2') {
-			var Rand = Math.random().toString(36).substr(2, 6);
-		}
-		else if(track == '3') {
-			var Rand = Math.random().toString(36).substr(2, 5);
-		}
-		else if(track == '4') {
-			var Rand = Math.random().toString(36).substr(2, 4);
-		}
-		else if(track == '5') {
-			var Rand = Math.random().toString(36).substr(2, 3);
-		}
-		else if(track == '6') {
-			var Rand = Math.random().toString(36).substr(2, 2);
-		}
-		else if(track == '7') {
-			var Rand = Math.random().toString(36).substr(2, 1);
-		}
-		else if(track == '8') {
-			var Rand = '';
-		}
-		else {
-			var Rand = Math.random().toString(36).substr(2, 8);
-		}
-		$('#trackName').val($('#trackName').val()+Rand);
-		
-	});
-
-    $("#crativeSubmit").on('click',function(){
-    	var tracks = $('#trackName').val();
-    	var path = "images/promotion";
-    	var fileExt = ".gif";
-		
-    	var lang = $('#lang option:selected').val();
-    	var wh = $('#wh option:selected').val();
-		var whPath = $('#wh option:selected').text();
-		var promo = $('#promotion option:selected').val();
-		var promoPath = $('#promotion option:selected').text().replace(/ /g,"_").toLowerCase();
-		var group = $('#group option:selected').val();
-
-		if(lang == '' || wh == '' || promo == '' || group == '' || tracks =='') {
-			$(".notif").html("Please complete all details").slideDown('fast');	
-			setTimeout("$('.notif').slideUp('slow')",'2500');
-		}
-		else {
-			var imgPath = path + "/" + promoPath + "/" + lang + "/" + whPath + fileExt;
-			$('.prevImg img').prop('src', imgPath);
-			$('.preview').show();	
-	    	$('.tid').html($('#trackName').val());
-	    	if(group == '2') {
-	    		$(".anchorImg").attr("href", "https://affiliate.fb88.com/Account/Register/Track.aspx?affiliateid=1688&lang=en-us&tid=" + tracks);
-	    		$("#copy1").attr("href", "https://affiliate.fb88.com/Account/Register/Track.aspx?affiliateid=1688&lang=en-us&tid=" + tracks);
-	    		$("#copy1").text("<a href='https://affiliate.fb88.com/Account/Register/Track.aspx?affiliateid=1688&lang=en-us&tid="+ tracks + "' target='_blank'>"+"https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=EN&tid="+ tracks +"</a>");
-	    	}
-	    	if(group == '1'){
-	    		$(".anchorImg").attr("href", "https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=en-us&tid=" + tracks);
-	    		$("#copy1").attr("href", "https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=en-us&tid=" + tracks);
-	    		$("#copy1").text("<a href='https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=en-us&tid="+ tracks + "' target='_blank'>"+"https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=EN&tid="+ tracks +"</a>");
-	    	}
-		}
-
-
-    });
    //PRELOAD
-	setTimeout(function(){
-		$("#status").fadeOut("slow");
-		$("#loader").delay(100).fadeOut();
-		$("body").removeClass("stack");
-	}, 1500);
+	//setTimeout(function(){
+	//	$("#status").fadeOut("slow");
+	//	$("#loader").delay(100).fadeOut();
+	//	$("body").removeClass("stack");
+	//}, 2000);
 	// TIME
 	function getPageName() {
 	    var index = window.location.href.lastIndexOf("/") + 1,
