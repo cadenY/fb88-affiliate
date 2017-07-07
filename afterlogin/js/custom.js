@@ -1,11 +1,8 @@
 $( document ).ready(function() {
    // alert( "ready!" );
-
-
-
-
+   
    // GETTING RANDOM ALPHANUMERIC TRACKING CODE
-   $('.trackName').on('click', function(){
+   /*$('.trackName').on('click', function(){
 		//alert(Math.random().toString(36).substr(2, 5));
 		var track = $('#trackName').val().length; 
 		if(track == '1') {
@@ -37,10 +34,13 @@ $( document ).ready(function() {
 		}
 		$('#trackName').val($('#trackName').val()+Rand);
 		
-	});
+	});*/
+
+	
 
     $("#crativeSubmit").on('click',function(){
     	var tracks = $('#trackName').val();
+    	var url = document.location.origin + "/afterlogin/";
     	var path = "images/promotion";
     	var fileExt = ".gif";
 		
@@ -63,12 +63,12 @@ $( document ).ready(function() {
 	    	if(group == '2') {
 	    		$(".anchorImg").attr("href", "https://affiliate.fb88.com/Account/Register/Track.aspx?affiliateid=1688&lang=en-us&tid=" + tracks);
 	    		$("#copy1").attr("href", "https://affiliate.fb88.com/Account/Register/Track.aspx?affiliateid=1688&lang=en-us&tid=" + tracks);
-	    		$("#copy1").text("<a href='https://affiliate.fb88.com/Account/Register/Track.aspx?affiliateid=1688&lang=en-us&tid="+ tracks + "' target='_blank'>"+"https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=EN&tid="+ tracks +"</a>");
+	    		$("#copy1").text("<a href='https://affiliate.fb88.com/Account/Register/Track.aspx?affiliateid=1688&lang=en-us&tid="+ tracks + "' target='_blank'>" + "<img src='"+ url + imgPath +"'></a>");
 	    	}
 	    	if(group == '1'){
 	    		$(".anchorImg").attr("href", "https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=en-us&tid=" + tracks);
 	    		$("#copy1").attr("href", "https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=en-us&tid=" + tracks);
-	    		$("#copy1").text("<a href='https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=en-us&tid="+ tracks + "' target='_blank'>"+"https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=EN&tid="+ tracks +"</a>");
+	    		$("#copy1").text("<a href='https://affiliate.fb88.com/Track.aspx?affiliateid=1688&lang=en-us&tid="+ tracks + "' target='_blank'>" + "<img src='"+ url + imgPath +"'></a>");
 	    	}
 		}
 
@@ -224,4 +224,21 @@ window.onclick = function(event) {
 
 
 
+
+	$( function() {
+		$( "#trackingModal" ).dialog({
+			autoOpen: false,
+			modal: true,
+			closeOnEscape: true,
+			width: 600
+		});
+		$( ".trackName" ).on( "click", function() {
+			$( "#trackingModal" ).dialog( "open" );
+		});
+		
+	});
+	$('.overlay_sector').bind( 'click', function() {
+        $("#trackingModal").dialog('close');
+        $('.overlay_sector').unbind();
+    } )
 });

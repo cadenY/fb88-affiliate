@@ -5,7 +5,24 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+::-webkit-input-placeholder {
+   text-align: center;
+}
 
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+.ui-datepicker-calendar {
+    display: none;
+    }
 body {
 	margin:0;
 	padding: 0;
@@ -1410,7 +1427,34 @@ li.selected {
 .creativeContent {
   padding:50px;
 }
-
+#trackingModal {
+	padding: 20px;
+	color: #fff;
+}
+#trackingModal button {
+	background: #028843;
+	color: #fff;
+	border:none;
+	display: block;
+	padding: 5px 10px;
+}
+#trackingModal input {
+	width: 100%;
+	padding: 5px 10px;
+}
+.ui-widget-header {
+	color: #fff;
+	background: #028843;
+	border:none !important;
+}
+.ui-widget-header .ui-dialog .ui-dialog-titlebar {
+	padding:10px;
+}
+.ui-widget-content {
+	border: none !important;
+	background: #1b1b1b;
+	color: #333333;
+}
 
 .preview {
 	display: none;
@@ -1592,6 +1636,7 @@ li.selected {
 }
 .searchMonth table tr td  input[type=text] {
 	padding:5px;
+	font-size: 13px;
 }
 .searchMonth table tr td select {
 	padding: 5px;

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Company Products - Affiliate</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="css/jquery.datetimepicker.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/jQUeryUI/jquery-ui.css" type="text/css" />
 </head>
 <body>
 	<!--<div id="loader">
@@ -54,8 +54,8 @@
                       <tr>
                         <td width="50">Month</td>
                         <td>
-                          <!-- <input type="text" id="month" name="month"> -->
-                          <select id='month'>
+                          <input type="text" id="month" name="month" placeholder=" -- Select Month --">
+                          <!-- <select id='month'>
                             <option value=''>--Select Month--</option>
                             <option value='1'>Janaury</option>
                             <option value='2'>February</option>
@@ -69,7 +69,7 @@
                             <option value='10'>October</option>
                             <option value='11'>November</option>
                             <option value='12'>December</option>
-                          </select> 
+                          </select>  -->
                         </td>
                       </tr>
                         <tr>
@@ -220,21 +220,33 @@
     <!--  end of wrapper -->
 
     <script type="text/javascript" src="js/jQuery.js"></script>
-    <!-- <script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script> -->
+    <script type="text/javascript" src="js/jQUeryUI/jquery-ui.js"></script>
     <script>
         $(function() {
             // header
             $('#header').load('header.html');
             $('#footer').load('footer.html');
-
-            //DATEPICKER
-            // $('#month').datetimepicker({
-            //   yearOffset:0,
-            //   lang:'en',
-            //   timepicker:false,
-            //   format:'d/m/Y',
-            //   formatDate:'Y/m/d',
-            // });
+            $('#month').datepicker({
+               changeMonth: true,
+               changeYear: true,
+               dateFormat: 'MM yy',
+                 
+               onClose: function() {
+                  var iMonth = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                  var iYear = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                  $(this).datepicker('setDate', new Date(iYear, iMonth, 1));
+               },
+                 
+               beforeShow: function() {
+                 if ((selDate = $(this).val()).length > 0) 
+                 {
+                    iYear = selDate.substring(selDate.length - 4, selDate.length);
+                    iMonth = jQuery.inArray(selDate.substring(0, selDate.length - 5), $(this).datepicker('option', 'monthNames'));
+                    $(this).datepicker('option', 'defaultDate', new Date(iYear, iMonth, 1));
+                     $(this).datepicker('setDate', new Date(iYear, iMonth, 1));
+                 }
+              }
+            });
         });
        
     </script>

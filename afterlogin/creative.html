@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Creative - Affiliate</title>
+    <link rel="stylesheet" href="css/jQUeryUI/jquery-ui.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/jquery.datetimepicker.css" type="text/css" />
 </head>
 <body>
     <!--<div id="loader">
@@ -42,7 +42,7 @@
         <div id="header" class="header clearfix"> </div>  <!--  end of header -->
 
          <!-- CONTENT STARTS HERE -->
-                  <div class="container creative clearfix">
+          <div class="container creative clearfix" id="creative">
                 <div class="creativeBox">
                   <div class="creativeTitle">Creative</div>
                   <div class="creativeContent">
@@ -63,6 +63,19 @@
                               <td></td>
                             </tr>
                             <tr>
+                              <td>Promotion</td>
+                              <td>
+                                <select name="promotion" id="promotion">
+                                  <option value=""> Select Promo </option>
+                                  <option value="1">150 Welcome Bonus</option>
+                                  <option value="2">Weekly Cash Rebates</option>
+                                  <option value="3">Reload Bonus</option>
+                                  <option value="4">All</option>
+                                </select>
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
                               <td>Group</td>
                               <td>
                                 <select name="group" id="group">
@@ -73,18 +86,7 @@
                               </td>
                               <td></td>
                             </tr>
-                            <tr>
-                              <td>Promotion</td>
-                              <td>
-                                <select name="promotion" id="promotion">
-                                  <option value=""> Select Promo </option>
-                                  <option value="1">150 Welcome Bonus</option>
-                                  <option value="2">Weekly Cash Rebates</option>
-                                  <option value="3">Reload Bonus</option>
-                                </select>
-                              </td>
-                              <td></td>
-                            </tr>
+                            
                             <tr>
                               <td>Width X Height</td>
                               <td>
@@ -107,7 +109,7 @@
                             </tr>
                             <tr>
                               <td></td>
-                              <td><input type="button" name="crativeSubmit" value="GENERATE" class="crativeSubmit" id="crativeSubmit"/></td>
+                              <td><input type="button" name="crativeSubmit" value="GENERATE" class="crativeSubmit" id="datepicker"/></td>
                               <td></td>
                             </tr>
 
@@ -141,9 +143,17 @@
                   </div><!-- creativeContent -->
                 </div><!-- creativeBox -->
 
-
-
-
+                <!-- MODAL -->
+                  <div id="trackingModal" title="ADD NEW TRACKING NAME">
+                    <table width="100%">
+                      <tr>
+                        <td>Tracking Name:</td>
+                        <td width="45%"><input type="text" name="trackingId" id="trackingId"></td>
+                        <td align="right"><button class="">ADD NEW TRACKING NAME</button></td>
+                      </tr>
+                    </table>
+                  </div>
+                <!-- END MODAL -->
 
 
 
@@ -158,21 +168,13 @@
     <!--  end of wrapper -->
 
     <script type="text/javascript" src="js/jQuery.js"></script>
-    <script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
+    <script type="text/javascript" src="js/jQUeryUI/jquery-ui.js"></script>
     <script>
+
         $(function() {
             // header
             $('#header').load('header.html');
             $('#footer').load('footer.html');
-
-            //DATEPICKER
-            $('.fromToCal').datetimepicker({
-              yearOffset:0,
-              lang:'en',
-              timepicker:false,
-              format:'d/m/Y',
-              formatDate:'Y/m/d',
-            });
         });
         function copyToClipboard(element) {
          var $temp = $("<input>");
@@ -181,6 +183,7 @@
          document.execCommand("copy");
          $temp.remove();
        }
+        
 
     </script>
 </body>
