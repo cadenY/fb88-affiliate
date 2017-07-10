@@ -1,42 +1,80 @@
 <div class="clearfix">
-                        <h1>Private Message</h1><!--leftAccountBox -->
+    <h1>Private Message</h1><!--leftAccountBox -->
 
 
-                        <div class="accountBox rightAccountBox">
-                            <div class="accountBoxTitle">Messages</div>
-                            <div class="accountBoxContent">
-                                <div class="aboxCont">
-                                    <form action="" method="">
-                                        <table width="100%">
-                                            <tr>
-                                                <td class="" width="40%">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class=""></td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                        </table>
-                                    </form>
-                                </div>
-                            </div>
-                        </div><!--rightAccountBox -->
-
-
+    <div class="privateMessage">
+        <div class="accountBoxTitle onClickTitle">Messages</div>
+        <div class="prvtMsgBoxContent clearfix">
+            <div class="prvtMsg leftPrvtMsg">
+                <ul>
+                    <li class="active"><a href="#">Compose</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Sent</a></li>
+                    <li><a href="#">Trash</a></li>
+                </ul>
+            </div>
+            <div class="prvtMsg rightPrvtMsg">
+                <!-- 1st PART -->
+                    <div class="sortingAndSearch">
+                        <table width="100%" id="tblSearchSorting">
+                            <tr>
+                                <td>
+                                    Sort By 
+                                    <select>
+                                        <option>Date</option>
+                                        <option>Ascending</option>
+                                        <option>Descending</option>    
+                                    </select>
+                                </td>
+                                <td align="right">Search : <input type="type" name="search"></td>
+                            </tr>
+                        </table>
                     </div>
+                <!-- 2nd PART -->
+                    <div class="inboxContent">
+                        <table width="100%" id="tblMail">
+                            <tr class="mailOpen">
+                                <td>To: <span class="affEmail">Affiliate Team</span></td>
+                                <td>Subject: <span class="affSubj">Test123456</span></td>
+                                <td><span class="affDT">07/10/2017  1:41PM</span></td>
+                            </tr>
+                            <tr class="mailOpen">
+                                <td>To: <span class="affEmail">Affiliate Team</span></td>
+                                <td>Subject: <span class="affSubj">Test123456</span></td>
+                                <td><span class="affDT">07/10/2017  1:41PM</span></td>
+                            </tr>
+                           
+                        </table>
+                    </div>
+                <!-- 3rd PART -->
+                    <div class="contPagination">
+                        <a href="#" class="leftP pagbtn">&lt;</a>
+                        <span class="ofData">1-10</span>
+                        <a href="#" class="rightP pagbtn">&gt;</a>
+                    </div>
+            </div>
+        </div>
+    </div><!--rightAccountBox -->
+
+
+</div>
+
+
+
+<div id="mailOpenModal" title="Subject Title">
+    <div class="msgContent">
+        <div class="emailFrom">Talent YRB &lt;<span>talentyrb77@gmail.com</span>&gt;</div>
+        <div class="emailTo">To:  mmember@affiliate.fb88.com</div>
+        <div class="emailMsg">
+            Hi Member,
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+    </div>
+    <div class="buttonActions">
+        <a href="#">Back</a>
+        <a href="#">Reply</a>
+        <a href="#">Delete</a>
+    </div>
+</div>
+

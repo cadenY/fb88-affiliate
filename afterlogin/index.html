@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home - Affiliate</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-
+    <link rel="stylesheet" href="css/jQUeryUI/jquery-ui.css" type="text/css" />
 </head>
 <body class="stack">
 	<div id="loader">
@@ -64,21 +64,13 @@
     <!--  end of wrapper -->
 
     <script type="text/javascript" src="js/jQuery.js"></script>
-    
+    <script type="text/javascript" src="js/jQUeryUI/jquery-ui.js"></script>
     <script>
         $(function() {
             // header
             $('#header').load('header.html');
             $('#footer').load('footer.html');
 
-            //DATE OF BIRTH
-            $('#dob').datetimepicker({
-              yearOffset:0,
-              lang:'en',
-              timepicker:false,
-              format:'d/m/Y',
-              formatDate:'Y/m/d',
-            });
         });
     </script>
 </body>
