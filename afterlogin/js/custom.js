@@ -88,7 +88,7 @@ $('.pOverview').mouseover(function(){
  });
 
 
-$('.rightControl').load('accounts/private-message.html');
+$('.rightControl').load('accounts/myaccount.html');
 $('.leftControl ul li a').on('click',function(e){
 e.preventDefault();
 //alert('sssssssss');
