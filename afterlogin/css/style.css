@@ -1371,6 +1371,7 @@ li.selected {
 }
 .emailFrom,.emailTo {
 	font-size: 14px;
+	font-weight: bold;
 }
 .emailTo {
 	margin: 10px 0 30px 0;
@@ -1388,6 +1389,24 @@ li.selected {
 	display: inline-block;
 	padding: 5px 10px;
 }
+#frmMsg input[type=text]::placeholder {
+	text-align: left;
+}
+#frmMsg input[type=text], #frmMsg textarea {
+	width: 100%;
+	display: block;
+	text-align: left;
+	border:1px solid #eee;
+	padding: 10px;
+}
+#frmMsg textarea {
+	margin: 10px 0;
+	min-height: 100px;
+}
+#composeModal .emailTo {
+	margin: 10px 0;
+}
+
 /*********************************************
 	END OF MY ACCOUNT PAGE
 **********************************************/

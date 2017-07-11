@@ -197,7 +197,12 @@ $('.loginBody').on('click', function(e){
 			autoOpen: false,
 			modal: true,
 			closeOnEscape: true,
-			width: 600
+			width: 600,
+			open: function(){
+            jQuery('.ui-widget-overlay').bind('click',function(){
+                jQuery('#expenseModal').dialog('close');
+	            })
+	        }
 		});
 		$( ".callExpense" ).on( "click", function(e) {
 			e.preventDefault();
@@ -209,9 +214,15 @@ $('.loginBody').on('click', function(e){
 			autoOpen: false,
 			modal: true,
 			closeOnEscape: true,
-			width: 600
+			width: 600,
+			open: function(){
+            jQuery('.ui-widget-overlay').bind('click',function(){
+                jQuery('#trackingModal').dialog('close');
+	            })
+	        }
 		});
-		$( ".trackName" ).on( "click", function() {
+		$( ".trackName" ).on( "click", function(e) {
+			e.preventDefault();
 			$( "#trackingModal" ).dialog( "open" );
 		});
 
@@ -220,12 +231,33 @@ $('.loginBody').on('click', function(e){
 			autoOpen: false,
 			modal: true,
 			closeOnEscape: true,
-			width: 600
+			width: 600,
+			open: function(){
+            jQuery('.ui-widget-overlay').bind('click',function(){
+                jQuery('#mailOpenModal').dialog('close');
+	            })
+	        }
 		});
-		$( ".mailOpen" ).on( "click", function() {
+		$( ".mailOpen" ).on( "click", function(e) {
+			e.preventDefault();
 			$( "#mailOpenModal" ).dialog( "open" );	
 		});
 		
+		$( "#composeModal" ).dialog({
+			autoOpen: false,
+			modal: true,
+			closeOnEscape: true,
+			width: 600,
+			open: function(){
+            jQuery('.ui-widget-overlay').bind('click',function(){
+                jQuery('#composeModal').dialog('close');
+	            })
+	        }
+		});
+		$( ".openCompose" ).on( "click", function(e) {
+			e.preventDefault();
+			$( "#composeModal" ).dialog( "open" );	
+		});
 	});
 	$('.overlay_sector').bind( 'click', function() {
         $("#trackingModal").dialog('close');

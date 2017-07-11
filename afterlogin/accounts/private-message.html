@@ -7,7 +7,7 @@
         <div class="prvtMsgBoxContent clearfix">
             <div class="prvtMsg leftPrvtMsg">
                 <ul>
-                    <li class="active"><a href="#">Compose</a></li>
+                    <li class="active"><a href="#" class="openCompose">Compose</a></li>
                     <li><a href="#">Inbox</a></li>
                     <li><a href="#">Sent</a></li>
                     <li><a href="#">Trash</a></li>
@@ -75,6 +75,19 @@
         <a href="#">Back</a>
         <a href="#">Reply</a>
         <a href="#">Delete</a>
+    </div>
+</div>
+
+<div id="composeModal" title="Write Message">
+    <div class="msgContent">
+        <div class="emailTo">To:  mmember@affiliate.fb88.com</div>
+        <div class="emailMsg">
+            <form action="" method="post" id="frmMsg" >
+            <input type="text" name="subj" placeholder="Subject:">
+            <textarea name="msg"></textarea>
+            <input type="button" name="" value="Send" class="btnGreen">
+            </form>
+        </div>
     </div>
 </div>
 
