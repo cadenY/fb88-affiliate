@@ -1391,6 +1391,12 @@ li.selected {
 }
 #frmMsg input[type=text]::placeholder {
 	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+}
+#frmMsg input[type=text] {
+	font-size: 15px;
+	font-weight: bold;
 }
 #frmMsg input[type=text], #frmMsg textarea {
 	width: 100%;
@@ -1398,6 +1404,7 @@ li.selected {
 	text-align: left;
 	border:1px solid #eee;
 	padding: 10px;
+
 }
 #frmMsg textarea {
 	margin: 10px 0;
@@ -1781,6 +1788,9 @@ li.selected {
 /*********************************************
 	COMPANY WIN/LOSE MEMBER - PAGE
 **********************************************/
+#expenseModal {
+	padding: 20px;
+}
 .tblForModal table {
 	border-collapse: collapse;
 	border:1px solid #ccc;
