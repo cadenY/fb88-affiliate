@@ -783,13 +783,15 @@ li.selected {
 .dum {
   position: relative;
 }
-.input:focus + .tooltips {
+.input:focus ~ .tooltips {
 	display:inline-block;
 }
 .tooltips {
 	font-family: Verdana,Arial,Tahoma;
 	display:none;
 	position:absolute;
+	top: -5px;
+	left: 100%;
 	margin-left: 20px;
 	padding-left:10px;
 	background:url(../images/triangle.png) no-repeat top left;
@@ -1282,6 +1284,110 @@ li.selected {
 	color:#fff;
 	cursor:pointer;
 }
+
+/* PRIVATE MESSAGE */
+.prvtMsgBoxContent {
+	padding: 20px;
+}
+.prvtMsg {
+	
+}
+.leftPrvtMsg {
+	float: left;
+	background:#181818;
+	width: 200px;
+	height: 380px;
+}
+.leftPrvtMsg ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+.leftPrvtMsg ul li {
+
+}
+.leftPrvtMsg ul li.active {
+	background: #028843;
+}
+.leftPrvtMsg ul li a {
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: #fff;
+}
+.leftPrvtMsg ul li a:hover {
+	color: #fee71b
+}
+
+.rightPrvtMsg {
+	background: #292929;
+	margin-left: 200px;
+	height: 380px;
+	position: relative;
+}
+.inboxContent {
+	overflow-y: scroll;
+	height: 268px;
+}
+.sortingAndSearch {
+	padding: 10px;
+	border-bottom: 1px solid #333;
+}
+.sortingAndSearch select, .sortingAndSearch input {
+	padding: 5px;
+}
+#tblSearchSorting, #tblMail {
+	border-collapse: collapse;
+
+}
+#tblMail tr td {
+	padding: 15px;
+	border:none;
+}
+#tblMail tr:nth-child(even) {background: #1f1f1f; cursor: pointer;}
+#tblMail tr:nth-child(odd) {background: #292929; cursor: pointer;}
+#tblMail tr:hover {
+	background: #028843;
+
+}
+.pagbtn {
+	background: #000000;
+	border-radius: 100%;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+.contPagination {
+	text-align: right;
+	padding: 10px;
+}
+.msgContent {
+	padding: 10px;
+	color: #fff;
+}
+.emailFrom,.emailTo {
+	font-size: 14px;
+}
+.emailTo {
+	margin: 10px 0 30px 0;
+}
+.buttonActions {
+	padding: 10px;
+}
+.buttonActions a {
+	margin-top: 20px;
+	text-decoration:  none;
+	color: #fff !important;
+	font-weight:bold;
+	margin-right: 10px;
+	background: #0f0f0f;
+	display: inline-block;
+	padding: 5px 10px;
+}
 /*********************************************
 	END OF MY ACCOUNT PAGE
 **********************************************/
@@ -1442,6 +1548,7 @@ li.selected {
 	width: 100%;
 	padding: 5px 10px;
 }
+/*
 .ui-widget-header {
 	color: #fff;
 	background: #028843;
@@ -1455,7 +1562,7 @@ li.selected {
 	background: #1b1b1b;
 	color: #333333;
 }
-
+*/
 .preview {
 	display: none;
 	-webkit-transition: ease-in;
@@ -1657,19 +1764,20 @@ li.selected {
 **********************************************/
 .tblForModal table {
 	border-collapse: collapse;
-	border:3px solid #ccc;
+	border:1px solid #ccc;
 }
 .tblForModal table tr th {
-  background: #028843;
+  background: #080808;
   font-size: 12px;
   font-weight: bold;
   padding: 15px;
 }
 .tblForModal table tr td, .tblForModal table tr th {
-	border:3px solid #ccc;
+	border:1px solid #ccc;
 	padding:10px;
 	text-align: center;
 	font-weight: bold;	
+	color: #fff;
 }
 /*********************************************
 	END COMPANY WIN/LOSE MEMBER - PAGE
